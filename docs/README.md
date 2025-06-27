@@ -6,10 +6,10 @@
 
 **[Русская версия](./RU_README.md)**
 
-### About the Project
+## About the Project
 **Skill Swap** is a web application for exchanging skills between users. Users can offer their expertise and find people willing to exchange knowledge in a mentorship or collaboration format. The project is aimed at self-development and professional growth through mutual assistance.
 
-### Scripts
+## Scripts
 Before running the project, make sure to install all dependencies `npm install`
 
 Use commands in the format `npm run <script_name>`
