@@ -1,0 +1,58 @@
+@use '@/shared/styles' as *;
+
+.container {
+	.title {
+		margin-bottom: 12px;
+		font-size: 16px;
+	}
+
+	.options {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.label {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding-left: 28px;
+		cursor: pointer;
+	}
+
+	.radioIndicator {
+		position: absolute;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: url('@/shared/assets/icons/radiobutton-empty.svg')
+			center/contain no-repeat;
+		border-radius: 50%;
+		transition: all 0.2s ease;
+	}
+
+	.input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+
+		&:checked + .radioIndicator {
+			background: url('@/shared/assets/icons/radiobutton-active.svg')
+				center/contain no-repeat;
+		}
+
+		&:focus-visible + .radioIndicator {
+			// outline: 2px solid green;
+			// outline-offset: 2px;
+		}
+	}
+
+	.radioText {
+		font-weight: 400;
+		font-style: normal;
+		line-height: $line-height-body;
+		letter-spacing: 0.32px;
+	}
+}

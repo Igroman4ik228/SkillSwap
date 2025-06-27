@@ -1,0 +1,20 @@
+@use '@/shared/styles' as *;
+
+.userSection {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	font-weight: 500;
+	font-size: $font-size-h1;
+	font-family: $font-title;
+	line-height: $line-height-h1;
+}

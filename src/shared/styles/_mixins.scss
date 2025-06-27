@@ -1,0 +1,28 @@
+@mixin font-face(
+	$font-name,
+	$font-path,
+	$font-weight: 400,
+	$font-style: normal
+) {
+	@font-face {
+		font-weight: $font-weight;
+		font-family: $font-name;
+		font-style: $font-style;
+		font-display: swap;
+		src:
+			url('#{$font-path}.woff2') format('woff2'),
+			url('#{$font-path}.woff') format('woff'),
+			url('#{$font-path}.ttf') format('truetype');
+	}
+}
+
+@mixin container {
+	max-width: 1368px;
+	margin: 0 auto;
+	// TODO: add padding for tablet and phone
+}
+
+@mixin container-full {
+	max-width: 100%;
+	// TODO: add padding for tablet and phone
+}

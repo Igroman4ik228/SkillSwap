@@ -1,0 +1,30 @@
+@use '@/shared/styles' as *;
+
+.counterWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.partTitle {
+	font-size: $font-size-h2;
+	font-family: $font-title;
+}
+
+.part {
+	display: block;
+	width: 60px;
+	height: 4px;
+	background-color: $color-disabled;
+	border-radius: 8px;
+}
+
+.stepActive {
+	background-color: $color-accent;
+}
+
+.stepsWrapper {
+	display: flex;
+	gap: 16px;
+}

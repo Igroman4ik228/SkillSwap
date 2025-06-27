@@ -1,0 +1,1 @@
+export { AllSkills } from './allSkills';

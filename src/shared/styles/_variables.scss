@@ -1,0 +1,52 @@
+// Colors
+$color-text: #253017;
+$color-caption: #69735d;
+$color-accent: #abd27a;
+$color-hover: #deebc5;
+$color-pressed: #508826;
+$color-disabled: #e4e8df;
+$color-disabled-text: #9ca197;
+$color-icon: #253017;
+$color-error: #bf3920;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Fonts
+$font-system-stack: -apple-system, system-ui, sans-serif;
+$font-main: 'Roboto', $font-system-stack;
+$font-title: 'Jost', $font-system-stack;
+$font-username: 'Open Sans', $font-system-stack;
+$font-counter: 'Inter', $font-system-stack;
+
+// Typography
+$font-size-h1: 32px;
+$line-height-h1: 40px;
+
+$font-size-h2: 24px;
+$line-height-h2: 28px;
+
+$font-size-h3: 20px;
+$line-height-h3: 24px;
+
+$font-size-h4: 16px;
+$line-height-h4: 24px;
+
+$font-size-body: 16px;
+$line-height-body: 24px;
+
+$font-size-caption: 12px;
+$line-height-caption: 16px;
+
+// Background
+$bg-color: #f9faf7;
+$bg-alarm: #e0796e;
+$bg-overlay: rgb(142 142 142 / 60%);
+
+// Colors tags
+$bg-tag-art: #f7e7f2;
+$bg-tag-language: #ebe5c5;
+$bg-tag-business: #eee7f7;
+$bg-tag-education: #e7f2f6;
+$bg-tag-house: #f7ebe5;
+$bg-tag-health: #e9f7e7;
+$bg-tag-counter: #e8ecf7;

@@ -1,0 +1,22 @@
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+
+	.avatar {
+		width: 48px;
+		height: 48px;
+		overflow: hidden;
+		border-radius: 50%;
+
+		> img {
+			transform: translateY(-10%);
+		}
+	}
+}
+
+.authButtons {
+	display: flex;
+	gap: 8px;
+}

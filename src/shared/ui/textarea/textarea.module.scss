@@ -1,0 +1,55 @@
+@use '@/shared/styles' as *;
+
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	.fieldWrapper {
+		position: relative;
+		display: flex;
+		align-self: flex-start;
+
+		.field {
+			width: 100%;
+			padding: 12px 20px;
+			border: 1px solid $color-caption;
+			border-radius: 12px;
+			caret-color: $color-pressed;
+			outline: none;
+			resize: none;
+
+			&::placeholder {
+				color: $color-caption;
+			}
+
+			&_error {
+				border-color: $color-error;
+			}
+
+			&_withIcon {
+				padding-right: 50px;
+			}
+		}
+
+		.icon {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+		}
+	}
+
+	.errorText {
+		font-size: $font-size-caption;
+		line-height: $line-height-caption;
+
+		&_active {
+			color: $color-error;
+		}
+	}
+
+	.fullWidth {
+		width: 100%;
+	}
+}

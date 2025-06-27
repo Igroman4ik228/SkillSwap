@@ -1,0 +1,32 @@
+@forward 'fonts';
+@forward 'reset';
+@use '@/shared/styles' as *;
+
+// Global styles
+
+*:focus-visible {
+	outline: 2px solid $color-accent;
+	outline-offset: 1px;
+}
+
+:disabled {
+	cursor: not-allowed;
+}
+
+body,
+html,
+#root {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	color: $color-text;
+	font-weight: 400;
+	font-size: $font-size-body;
+	font-family: $font-main;
+	line-height: $line-height-body;
+	background-color: $bg-color;
+	text-rendering: optimizespeed;
+}

@@ -1,0 +1,20 @@
+@use '@/shared/styles' as *;
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+
+	.icon {
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+	}
+
+	.text {
+		font-weight: 600;
+		font-size: $font-size-h2;
+		font-family: $font-title;
+	}
+}

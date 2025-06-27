@@ -1,0 +1,8 @@
+{
+	"short_name": "Skill Swap",
+	"name": "Skill Swap",
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff"
+}

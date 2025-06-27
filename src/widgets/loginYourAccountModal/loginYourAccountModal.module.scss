@@ -1,0 +1,31 @@
+@use '@/shared/styles' as *;
+
+.createOfferModal {
+	width: 556px;
+	text-align: center;
+
+	.icon {
+		margin-bottom: 52px;
+
+		path {
+			vector-effect: non-scaling-stroke;
+		}
+	}
+
+	.title {
+		margin-block-end: 12px;
+		font-weight: 500;
+		font-size: $font-size-h2;
+		font-family: $font-title;
+		line-height: $line-height-h2;
+	}
+
+	.description {
+		margin-block-end: 32px;
+	}
+
+	.button_wrapper {
+		display: flex;
+		gap: 20px;
+	}
+}

@@ -1,0 +1,1 @@
+export { SuggestionsBlock } from './suggestionsBlock';

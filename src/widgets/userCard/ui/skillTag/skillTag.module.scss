@@ -1,0 +1,38 @@
+@use '@/shared/styles' as *;
+
+.skill {
+	display: flex;
+	width: fit-content;
+	padding: 8px 12px;
+	font-size: $font-size-caption;
+	line-height: $line-height-caption;
+	border-radius: 20px;
+
+	&_art {
+		background-color: $bg-tag-art;
+	}
+
+	&_language {
+		background-color: $bg-tag-language;
+	}
+
+	&_business {
+		background-color: $bg-tag-business;
+	}
+
+	&_education {
+		background-color: $bg-tag-education;
+	}
+
+	&_house {
+		background-color: $bg-tag-house;
+	}
+
+	&_health {
+		background-color: $bg-tag-health;
+	}
+
+	&_counter {
+		background-color: $bg-tag-counter;
+	}
+}

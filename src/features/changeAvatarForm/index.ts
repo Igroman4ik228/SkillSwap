@@ -1,0 +1,1 @@
+export { ChangeAvatarForm } from './changeAvatarForm';

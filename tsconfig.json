@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+		/* Language and Environment */
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+		"jsx": "react-jsx",
+
+		/* Linting and Safety */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Paths and Aliases */
+		"baseUrl": "src",
+		"paths": {
+			"@/*": ["./*"]
+		},
+
+		/* Types */
+		"types": ["node"],
+
+		/* Compatibility */
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}

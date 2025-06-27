@@ -1,0 +1,1 @@
+export { AuthRegisterForm } from './authRegisterForm';

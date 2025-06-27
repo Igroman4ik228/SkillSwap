@@ -1,0 +1,38 @@
+@use '@/shared/styles' as *;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.inputMB {
+	margin-bottom: 32px;
+}
+
+.line {
+	width: 100%;
+	border: 1px solid $color-disabled;
+}
+
+.textDivider {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	margin: 24px 0;
+}
+
+.signature {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.passwordHint {
+	margin-top: 4px;
+	font-size: $font-size-caption;
+	line-height: $line-height-caption;
+}
+
+.btnDisabled {
+	background-color: $color-disabled;
+}

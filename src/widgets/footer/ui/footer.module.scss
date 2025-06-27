@@ -1,0 +1,39 @@
+@use '@/shared/styles' as *;
+
+.footer {
+	padding: 32px 36px;
+	background-color: $color-white;
+}
+
+.container {
+	@include container;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.logo {
+	display: flex;
+}
+
+.copyright {
+	color: $color-caption;
+	font-size: $font-size-caption;
+	line-height: $line-height-caption;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 24px;
+
+	.column {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		gap: 12px;
+		max-width: 324px;
+	}
+}

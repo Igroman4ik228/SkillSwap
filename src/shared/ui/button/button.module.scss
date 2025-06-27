@@ -1,0 +1,63 @@
+@use '@/shared/styles' as *;
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid transparent;
+
+	&_primary {
+		padding: 12px 24px;
+		color: $color-text;
+		background-color: $color-accent;
+		border-radius: 12px;
+
+		&:hover {
+			background-color: $color-hover;
+		}
+
+		&:active {
+			color: $color-white;
+			background-color: $color-pressed;
+		}
+
+		&:disabled {
+			color: $color-caption;
+			background-color: $color-disabled;
+		}
+	}
+
+	&_secondary {
+		padding: 12px 24px;
+		color: $color-icon;
+		background-color: $color-white;
+		border: 1px solid $color-accent;
+		border-radius: 12px;
+
+		&:hover {
+			color: $color-caption;
+			border-color: $color-hover;
+		}
+
+		&:active {
+			color: $color-text;
+			border-color: $color-pressed;
+		}
+
+		&:disabled {
+			color: $color-disabled-text;
+			border-color: $color-disabled;
+		}
+	}
+
+	&_tertiary {
+		padding: 12px 24px;
+		color: $color-text;
+		background-color: $color-white;
+		border-radius: 12px;
+	}
+}
+
+.fullWidth {
+	width: 100%;
+}

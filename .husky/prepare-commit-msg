@@ -1,0 +1,1 @@
+( exec < /dev/tty && git cz --hook --hook ) || true 2> /dev/null

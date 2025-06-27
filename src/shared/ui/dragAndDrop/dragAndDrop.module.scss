@@ -1,0 +1,30 @@
+@use '@/shared/styles' as *;
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+	padding: 20px 16px;
+	color: $color-caption;
+	text-align: center;
+	border: 1px dashed $color-caption;
+	border-radius: 12px;
+
+	.inner {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		.controls {
+			display: flex;
+			justify-content: center;
+			gap: 2px;
+			color: $color-pressed;
+		}
+	}
+
+	.hiddenInput {
+		display: none;
+	}
+}

@@ -1,0 +1,65 @@
+@use '@/shared/styles' as *;
+
+.filter {
+	.title {
+		margin-bottom: 12px;
+		font-size: 16px;
+	}
+
+	.options {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.label {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		min-height: 20px;
+		padding-left: 28px;
+		cursor: pointer;
+	}
+
+	.box {
+		position: absolute;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: url('@/shared/assets/icons/checkbox-empty.svg') center/contain
+			no-repeat;
+		border-radius: 4px;
+		transition: all 0.2s ease;
+	}
+
+	.input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+
+		&:checked + .box {
+			background: url('@/shared/assets/icons/checkbox-checked.svg')
+				center/contain no-repeat;
+		}
+	}
+
+	.text {
+		font-weight: 400;
+		// font-family: $font-main;
+		// font-size: $font-size-body;
+		font-style: normal;
+		line-height: $line-height-body;
+		letter-spacing: 0.32px;
+	}
+
+	// Стили для подкатегорий
+
+	&.subcategory {
+		.input:checked + .box {
+			background: url('@/shared/assets/icons/checkbox-sub-cat.svg')
+				center/contain no-repeat;
+		}
+	}
+}

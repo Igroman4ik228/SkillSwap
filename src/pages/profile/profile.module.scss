@@ -1,0 +1,18 @@
+@use '@/shared/styles' as *;
+
+.profilePage {
+	@include container;
+	display: flex;
+	gap: 24px;
+	margin-top: 32px;
+	margin-bottom: 60px;
+}
+
+.main {
+	display: flex;
+	flex: 1;
+	gap: 24px;
+	padding: 60px;
+	background-color: $color-white;
+	border-radius: 16px;
+}

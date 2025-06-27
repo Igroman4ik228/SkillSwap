@@ -1,0 +1,28 @@
+@use '@/shared/styles' as *;
+
+.profileMenu {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	inline-size: 324px;
+	block-size: 100;
+	padding: 40px;
+	background-color: $color-white;
+	border-radius: 16px;
+}
+
+.link {
+	display: flex;
+	gap: 12px;
+	padding: 12px 20px;
+	border-radius: 12px;
+}
+
+.link:hover {
+	background-color: $color-disabled;
+}
+
+.linkActive,
+.linkActive:hover {
+	background-color: $color-hover;
+}

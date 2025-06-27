@@ -1,0 +1,38 @@
+@use '@/shared/styles' as *;
+
+.searchContainer {
+	display: flex;
+	flex: 1;
+	background-color: $color-white;
+	border-radius: 12px;
+}
+
+.searchInput {
+	position: relative;
+	padding-left: 22px;
+
+	input {
+		border: none;
+	}
+
+	svg {
+		opacity: 1;
+		transition: opacity 0.2s;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		top: 50%;
+		inset-inline-start: 12px;
+		width: 24px;
+		height: 24px;
+		background: url('@/shared/assets/icons/search.svg') no-repeat;
+		transform: translateY(-50%);
+		pointer-events: none;
+		content: '';
+	}
+}

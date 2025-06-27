@@ -1,0 +1,66 @@
+@use '@/shared/styles' as *;
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	min-width: 1368px;
+	max-width: 1368px;
+	margin: 36px;
+
+	.title {
+		color: $color-text;
+		font-size: $font-size-h2;
+		font-family: $font-title;
+		line-height: $line-height-h2;
+	}
+
+	.usersList {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+
+		.leftButton {
+			position: absolute;
+			top: 45%;
+			left: -16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 32px;
+			height: 32px;
+			background-color: $color-disabled;
+			border-radius: 100px;
+			transform: rotate(180deg);
+
+			&:disabled {
+				cursor: none;
+				opacity: 0;
+			}
+		}
+
+		.list {
+			display: flex;
+			flex-direction: row;
+			gap: 24px;
+		}
+
+		.rightButton {
+			position: absolute;
+			top: 45%;
+			right: -16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 32px;
+			height: 32px;
+			background-color: $color-disabled;
+			border-radius: 100px;
+
+			&:disabled {
+				cursor: none;
+				opacity: 0;
+			}
+		}
+	}
+}

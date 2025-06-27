@@ -1,0 +1,12 @@
+@use '@/shared/styles' as *;
+
+.allSkills {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	max-width: 1136px;
+	padding: 60px;
+	background-color: $color-white;
+	border: 1px solid $color-caption;
+	border-radius: 12px;
+}

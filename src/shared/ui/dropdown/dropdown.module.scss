@@ -1,0 +1,112 @@
+@use '@/shared/styles' as *;
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	&.fullWidth {
+		width: 100%;
+	}
+
+	.labelText {
+		color: $color-text;
+	}
+
+	.dropdownErrorText {
+		display: none;
+
+		&.dropdownErrorText_active {
+			display: block;
+			color: $color-error;
+			font-size: $font-size-caption;
+			line-height: $line-height-caption;
+		}
+	}
+
+	.dropdown {
+		width: 100%;
+		overflow: hidden;
+		border: 1px solid $color-text;
+		border-radius: 12px;
+		cursor: pointer;
+
+		&.field_error {
+			border-color: $color-error;
+		}
+
+		.optionsWrapper {
+			display: none;
+
+			.options {
+				overflow-y: auto;
+				list-style: none;
+				background-color: inherit;
+				scrollbar-width: thin;
+				scrollbar-color: $color-disabled transparent;
+
+				.option {
+					padding: 4px 20px;
+					color: $color-text;
+					border-radius: 4px;
+					cursor: pointer;
+					transition: background-color 0.2s ease;
+					user-select: none;
+
+					&:hover,
+					&.highlighted {
+						display: flex;
+						gap: 4px;
+						background-color: $color-disabled;
+					}
+
+					.checkboxWrapper {
+						display: flex;
+						align-items: center;
+						gap: 8px;
+
+						.checkboxIcon {
+							background-repeat: no-repeat;
+							background-position: center;
+						}
+					}
+				}
+			}
+		}
+
+		&.open .optionsWrapper {
+			display: block;
+		}
+
+		&.searchableSingle.open .optionsWrapper {
+			.options {
+				max-height: 168px;
+			}
+		}
+
+		.inputWrapper {
+			display: flex;
+			caret-color: $color-pressed;
+
+			.searchInput {
+				width: 100%;
+
+				input {
+					border: none;
+					outline: none;
+				}
+			}
+		}
+
+		.valueWrapper {
+			display: flex;
+			justify-content: space-between;
+			padding: 12px 20px;
+			border-radius: 13px;
+
+			&.open {
+				border-bottom: 1px solid #e5e8e0;
+			}
+		}
+	}
+}

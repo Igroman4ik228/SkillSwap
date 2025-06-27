@@ -1,0 +1,69 @@
+@use '@/shared/styles' as *;
+
+.section {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.iconWrapper {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	padding: 8px;
+	border-radius: 100px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.title {
+	font-size: $font-size-h2;
+	font-family: $font-title;
+	line-height: $line-height-h2;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.item {
+	font-family: $font-main;
+}
+
+.business {
+	background-color: $bg-tag-business;
+}
+
+.art {
+	background-color: $bg-tag-art;
+}
+
+.language {
+	background-color: $bg-tag-language;
+}
+
+.education {
+	background-color: $bg-tag-education;
+}
+
+.house {
+	background-color: $bg-tag-house;
+}
+
+.health {
+	background-color: $bg-tag-health;
+}

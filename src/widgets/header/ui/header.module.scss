@@ -1,0 +1,21 @@
+@use '@/shared/styles' as *;
+
+.header {
+	padding-top: 36px;
+
+	.container {
+		@include container;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+
+		&_pure {
+			justify-content: space-between;
+		}
+	}
+
+	.search {
+		flex: 1;
+	}
+}

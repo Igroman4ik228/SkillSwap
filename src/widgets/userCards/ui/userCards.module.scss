@@ -1,0 +1,11 @@
+@use '@/shared/styles' as *;
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, min(324px));
+	gap: 24px;
+
+	@media (width <= 1020px) {
+		justify-content: center;
+	}
+}

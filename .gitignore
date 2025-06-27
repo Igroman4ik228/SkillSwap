@@ -1,0 +1,39 @@
+node_modules/
+
+# Кэш Vite и другие временные файлы
+.vite/
+dist/
+build/
+
+# Локальные конфиги IDE и редакторов
+.vscode/
+.idea/
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Файлы окружения
+.env
+.env.local
+.env.*.local
+
+# Кэш и временные файлы тестов
+coverage/
+jest-cache/
+test-results/
+
+# Конфиги и файлы, создаваемые линтерами и форматтерами (если генерируются)
+.stylelintcache
+.eslintcache
+
+# Другие временные или рабочие файлы
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+*storybook.log
+storybook-static

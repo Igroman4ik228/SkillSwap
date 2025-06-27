@@ -1,0 +1,20 @@
+@use '@/shared/styles' as *;
+
+.container {
+	@include container;
+	display: flex;
+	gap: 24px;
+	margin-top: 32px;
+	margin-bottom: 60px;
+}
+
+.filtersBar {
+	flex: 0 0 324px;
+}
+
+.content {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	gap: 40px;
+}

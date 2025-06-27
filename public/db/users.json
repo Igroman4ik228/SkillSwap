@@ -1,0 +1,878 @@
+[
+	{
+		"id": "85dd190e-ffcf-49df-b883-d16d7f31b457",
+		"name": "Михаил",
+		"city": "Ростов-на-Дону",
+		"bornDate": "1998-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/89.jpg",
+		"teach": "Управление командой",
+		"learn": ["Проектное управление", "Продажи и переговоры"],
+		"isFavorite": false,
+		"isExchangeRequested": true,
+		"description": "Опытный руководитель, готов делиться знаниями. Ищу новые навыки для профессионального роста."
+	},
+	{
+		"id": "a8544a6f-d946-4fd0-9ccf-4e324d32f4ad",
+		"name": "Полина",
+		"city": "Казань",
+		"bornDate": "1965-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/58.jpg",
+		"teach": "Когнитивные техники",
+		"learn": ["Арт-терапия", "Проектное управление"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по когнитивным техникам. Хочу освоить арт-терапию и управление проектами."
+	},
+	{
+		"id": "a9975dd7-cc4c-4f84-81c5-a034503d58b0",
+		"name": "Екатерина",
+		"city": "Пермь",
+		"bornDate": "1986-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/66.jpg",
+		"teach": "Фотография",
+		"learn": [
+			"Продажи и переговоры",
+			"Ремонт",
+			"Домашние финансы",
+			"Сон и восстановление"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Профессиональный фотограф. Интересуюсь новыми навыками для личного развития."
+	},
+	{
+		"id": "a2a2abab-5c17-43f3-a7d1-980b63ce5912",
+		"name": "Дмитрий",
+		"city": "Нижний Новгород",
+		"bornDate": "1990-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/39.jpg",
+		"teach": "Питание и ЗОЖ",
+		"learn": ["Английский", "Сон и восстановление", "Личный бренд"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по здоровому образу жизни. Хочу улучшить английский и личный бренд."
+	},
+	{
+		"id": "bd5f7d64-fe8d-4d61-acb5-06ec5e5323c3",
+		"name": "Екатерина",
+		"city": "Ростов-на-Дону",
+		"bornDate": "1977-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/23.jpg",
+		"teach": "Личный бренд",
+		"learn": [
+			"Ремонт",
+			"Маркетинг и реклама",
+			"Китайский",
+			"Физические тренировки",
+			"Навыки преподавания"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по личному брендингу. Ищу новые навыки для профессионального роста."
+	},
+	{
+		"id": "54c47059-9ce9-487b-b5dd-919fe898344e",
+		"name": "Анна",
+		"city": "Пермь",
+		"bornDate": "2004-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/64.jpg",
+		"teach": "Домашние финансы",
+		"learn": [
+			"Арт-терапия",
+			"Рисование и иллюстрация",
+			"Продажи и переговоры",
+			"Видеомонтаж"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Знаток финансового планирования. Хочу освоить творческие и профессиональные навыки."
+	},
+	{
+		"id": "5db4fff4-cf81-4968-8aaf-98ab2fcf3a37",
+		"name": "Екатерина",
+		"city": "С gyro-Петербург",
+		"bornDate": "1983-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/14.jpg",
+		"teach": "Креативное письмо",
+		"learn": ["Арт-терапия", "Актёрское мастерство"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Писатель с креативным подходом. Интересуюсь арт-терапией и актёрским мастерством."
+	},
+	{
+		"id": "586788c9-3cba-4b1c-908f-9467400b98e4",
+		"name": "Егор",
+		"city": "Воронеж",
+		"bornDate": "2004-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/83.jpg",
+		"teach": "Видеомонтаж",
+		"learn": ["Ремонт", "Немецкий", "Навыки преподавания", "Креативное письмо"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по видеомонтажу. Хочу изучить новые языки и навыки преподавания."
+	},
+	{
+		"id": "d518bc16-7b06-443f-8438-9246f98b49ca",
+		"name": "Виктория",
+		"city": "Ростов-на-Дону",
+		"bornDate": "1975-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/86.jpg",
+		"teach": "Подготовка к экзаменам (IELTS, TOEFL)",
+		"learn": [
+			"Испанский",
+			"Физические тренировки",
+			"Маркетинг и реклама",
+			"Баланс жизни и работы"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по подготовке к экзаменам. Хочу изучить испанский и маркетинг."
+	},
+	{
+		"id": "ba44721a-7967-41e0-9528-04184048f782",
+		"name": "Андрей",
+		"city": "Екатеринбург",
+		"bornDate": "1993-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/13.jpg",
+		"teach": "Скорочтение",
+		"learn": [
+			"Питание и ЗОЖ",
+			"Актёрское мастерство",
+			"Ремонт",
+			"Физические тренировки"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Мастер скорочтения. Интересуюсь здоровым образом жизни и актёрским мастерством."
+	},
+	{
+		"id": "04429f25-ddcb-4fb9-8cf5-507bcc1e6dac",
+		"name": "Иван",
+		"city": "Уфа",
+		"bornDate": "1994-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/78.jpg",
+		"teach": "Скорочтение",
+		"learn": [
+			"Рисование и иллюстрация",
+			"Фотография",
+			"Навыки преподавания",
+			"Осознанность",
+			"Актёрское мастерство"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по скорочтению. Хочу развивать творческие и преподавательские навыки."
+	},
+	{
+		"id": "c25047d8-8d56-4be2-b50e-4250afd66e46",
+		"name": "Никита",
+		"city": "Нижний Новгород",
+		"bornDate": "1974-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/4.jpg",
+		"teach": "Коучинг",
+		"learn": ["Китайский", "Уборка и организация", "Продажи и переговоры"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Профессиональный коуч. Интересуюсь китайским языком и продажами."
+	},
+	{
+		"id": "cf86990c-b9bc-473b-8552-e1baaf7f6b0f",
+		"name": "Никита",
+		"city": "Уфа",
+		"bornDate": "1998-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/17.jpg",
+		"teach": "Питание и ЗОЖ",
+		"learn": [
+			"Резюме и собеседование",
+			"Китайский",
+			"Домашние растения",
+			"Навыки преподавания",
+			"Личный бренд"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Знаток здорового образа жизни. Хочу улучшить навыки общения и преподавания."
+	},
+	{
+		"id": "37fab87d-c5de-4498-9f7f-363206a50ed3",
+		"name": "Андрей",
+		"city": "Екатеринбург",
+		"bornDate": "1979-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/82.jpg",
+		"teach": "Физические тренировки",
+		"learn": [
+			"Подготовка к экзаменам (IELTS, TOEFL)",
+			"Французский",
+			"Навыки обучения"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Тренер по физическим упражнениям. Хочу изучить французский и навыки обучения."
+	},
+	{
+		"id": "b2c08c3f-093a-4b4f-90ff-7808ce976cf5",
+		"name": "Мария",
+		"city": "Пермь",
+		"bornDate": "1988-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/98.jpg",
+		"teach": "Личностное развитие",
+		"learn": ["Когнитивные техники", "Баланс жизни и работы"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по личностному росту. Интересуюсь когнитивными техниками."
+	},
+	{
+		"id": "712e803b-3f8f-4c9e-9ce7-6933ab089476",
+		"name": "Виктория",
+		"city": "Нижний Новгород",
+		"bornDate": "1969-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/60.jpg",
+		"teach": "Коучинг",
+		"learn": ["Управление командой", "Ремонт", "Актёрское мастерство"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Профессиональный коуч. Хочу освоить управление командами и ремонт."
+	},
+	{
+		"id": "96f2134e-c3a6-4bb5-b11c-637395e1fa98",
+		"name": "Михаил",
+		"city": "Нижний Новгород",
+		"bornDate": "1980-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/22.jpg",
+		"teach": "Скорочтение",
+		"learn": ["Когнитивные техники", "Навыки обучения"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Мастер скорочтения. Интересуюсь когнитивными техниками и обучением."
+	},
+	{
+		"id": "49ddc745-91dc-41c2-97f5-2788778f3466",
+		"name": "Алиса",
+		"city": "Москва",
+		"bornDate": "2002-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/64.jpg",
+		"teach": "Фотография",
+		"learn": ["Видеомонтаж", "Рисование и иллюстрация"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Фотограф с творческим подходом. Хочу освоить видеомонтаж и иллюстрацию."
+	},
+	{
+		"id": "d764ef20-c194-4318-af81-ca4514129e92",
+		"name": "Полина",
+		"city": "Красноярск",
+		"bornDate": "1981-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/6.jpg",
+		"teach": "Сон и восстановление",
+		"learn": ["Физические тренировки", "Английский", "Французский"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по восстановлению. Хочу изучить языки и физические тренировки."
+	},
+	{
+		"id": "08da48a5-ff55-42a6-a002-47bea4bdd39d",
+		"name": "Полина",
+		"city": "Уфа",
+		"bornDate": "1993-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/22.jpg",
+		"teach": "Скорочтение",
+		"learn": [
+			"Французский",
+			"Арт-терапия",
+			"Проектное управление",
+			"Маркетинг и реклама",
+			"Декор и DIY"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по скорочтению. Хочу освоить творческие и профессиональные навыки."
+	},
+	{
+		"id": "162c95c1-8756-492e-aed4-d7c65a905920",
+		"name": "Анна",
+		"city": "Красноярск",
+		"bornDate": "1985-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/52.jpg",
+		"teach": "Личный бренд",
+		"learn": [
+			"Йога и медитация",
+			"Проектное управление",
+			"Приготовление еды",
+			"Личностное развитие"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по личному брендингу. Интересуюсь йогой и кулинарией."
+	},
+	{
+		"id": "f126903f-d280-46e8-bfa5-dce8a3ab879d",
+		"name": "Максим",
+		"city": "Нижний Новгород",
+		"bornDate": "1972-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/76.jpg",
+		"teach": "Коучинг",
+		"learn": ["Фотография", "Видеомонтаж", "Английский"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Профессиональный коуч. Хочу освоить фотографию и английский."
+	},
+	{
+		"id": "6bd56538-3086-478f-aa0c-6fd07ec053a3",
+		"name": "Анна",
+		"city": "Челябинск",
+		"bornDate": "2004-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/56.jpg",
+		"teach": "Резюме и собеседование",
+		"learn": ["Питание и ЗОЖ", "Личный бренд", "Тайм-менеджмент"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по резюме. Хочу изучить тайм-менеджмент и ЗОЖ."
+	},
+	{
+		"id": "3c7546a7-e0b4-451a-a702-1e439ad29aa3",
+		"name": "Виктория",
+		"city": "Санкт-Петербург",
+		"bornDate": "1984-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/92.jpg",
+		"teach": "Арт-терапия",
+		"learn": ["Когнитивные техники", "Ремонт", "Актёрское мастерство"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Практик арт-терапии. Хочу изучить когнитивные техники и ремонт."
+	},
+	{
+		"id": "fafa1665-f7c3-4a03-8660-ceb5679cd628",
+		"name": "Полина",
+		"city": "Волгоград",
+		"bornDate": "1973-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/81.jpg",
+		"teach": "Ремонт",
+		"learn": [
+			"Личностное развитие",
+			"Китайский",
+			"Подготовка к экзаменам (IELTS, TOEFL)",
+			"Хранение вещей",
+			"Физические тренировки"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Мастер ремонта. Интересуюсь личностным развитием и языками."
+	},
+	{
+		"id": "83341a70-0578-4d32-9f52-1598cb70c069",
+		"name": "Михаил",
+		"city": "Казань",
+		"bornDate": "1979-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+		"teach": "Испанский",
+		"learn": [
+			"Рисование и иллюстрация",
+			"Личностное развитие",
+			"Питание и ЗОЖ"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель испанского. Хочу изучить рисование и ЗОЖ."
+	},
+	{
+		"id": "7dea3369-2161-4490-bfd0-0e40cd455355",
+		"name": "Анна",
+		"city": "Ростов-на-Дону",
+		"bornDate": "2002-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+		"teach": "Актёрское мастерство",
+		"learn": ["Домашние растения", "Физические тренировки"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Актриса с опытом. Интересуюсь растениями и тренировками."
+	},
+	{
+		"id": "dd9d9cd6-9b72-4a2c-812d-70a1b31b1593",
+		"name": "Кирилл",
+		"city": "Красноярск",
+		"bornDate": "1977-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/67.jpg",
+		"teach": "Маркетинг и реклама",
+		"learn": ["Резюме и собеседование", "Английский", "Хранение вещей"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по маркетингу. Хочу улучшить английский и резюме."
+	},
+	{
+		"id": "6811b0a7-15bb-4b5b-b084-a566ed92a163",
+		"name": "Алексей",
+		"city": "Воронеж",
+		"bornDate": "1980-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/17.jpg",
+		"teach": "Тайм-менеджмент",
+		"learn": [
+			"Уборка и организация",
+			"Предпринимательство",
+			"Ремонт",
+			"Резюме и собеседование",
+			"Приготовление еды"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по тайм-менеджменту. Хочу освоить предпринимательство и кулинарию."
+	},
+	{
+		"id": "3625e41c-77ce-48a6-a285-db0055d2b899",
+		"name": "Анна",
+		"city": "Челябинск",
+		"bornDate": "1982-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/95.jpg",
+		"teach": "Домашние финансы",
+		"learn": [
+			"Домашние растения",
+			"Питание и ЗОЖ",
+			"Йога и медитация",
+			"Актёрское мастерство",
+			"Сон и восстановление"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Знаток финансов. Интересуюсь йогой и актёрским мастерством."
+	},
+	{
+		"id": "ebd4f040-48e7-487e-80dd-ed647171bc56",
+		"name": "Арсений",
+		"city": "Санкт-Петербург",
+		"bornDate": "1974-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/59.jpg",
+		"teach": "Приготовление еды",
+		"learn": [
+			"Резюме и собеседование",
+			"Ментальное здоровье",
+			"Арт-терапия",
+			"Управление командой"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Шеф-повар с опытом. Хочу изучить арт-терапию и управление."
+	},
+	{
+		"id": "6a7c5d1a-dc53-47a1-a4e3-3a6a39ba9f2d",
+		"name": "Дмитрий",
+		"city": "Самара",
+		"bornDate": "2000-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/74.jpg",
+		"teach": "Личностное развитие",
+		"learn": ["Китайский", "Уборка и организация", "Личный бренд", "Японский"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по личностному росту. Хочу изучить языки и организацию."
+	},
+	{
+		"id": "45ffc9b6-2577-4ff8-a474-d4c35e67349a",
+		"name": "Иван",
+		"city": "Пермь",
+		"bornDate": "1989-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/79.jpg",
+		"teach": "Немецкий",
+		"learn": [
+			"Продажи и переговоры",
+			"Ментальное здоровье",
+			"Французский",
+			"Ремонт"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель немецкого. Интересуюсь продажами и ремонтом."
+	},
+	{
+		"id": "2210d140-79ee-4dfd-939c-c9d1bcca092c",
+		"name": "Анна",
+		"city": "Нижний Новгород",
+		"bornDate": "1985-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+		"teach": "Маркетинг и реклама",
+		"learn": ["Ремонт", "Навыки обучения", "Актёрское мастерство", "Испанский"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по маркетингу. Хочу изучить испанский и актёрское мастерство."
+	},
+	{
+		"id": "03e8fc25-c766-4927-a29e-4d4030650d15",
+		"name": "Андрей",
+		"city": "Пермь",
+		"bornDate": "1989-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/83.jpg",
+		"teach": "Когнитивные техники",
+		"learn": [
+			"Маркетинг и реклама",
+			"Ремонт",
+			"Рисование и иллюстрация",
+			"Хранение вещей",
+			"Продажи и переговоры"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по когнитивным техникам. Хочу развивать творческие навыки."
+	},
+	{
+		"id": "4b44f143-6fbf-44c8-abe4-ab1256559d39",
+		"name": "Юлия",
+		"city": "Уфа",
+		"bornDate": "1978-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/95.jpg",
+		"teach": "Фотография",
+		"learn": [
+			"Ремонт",
+			"Когнитивные техники",
+			"Баланс жизни и работы",
+			"Личностное развитие",
+			"Французский"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Профессиональный фотограф. Интересуюсь личностным развитием и французским."
+	},
+	{
+		"id": "5c9850b8-ce1e-4837-afbb-455fc1adc892",
+		"name": "Иван",
+		"city": "Казань",
+		"bornDate": "1999-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+		"teach": "Продажи и переговоры",
+		"learn": [
+			"Креативное письмо",
+			"Арт-терапия",
+			"Личный бренд",
+			"Приготовление еды",
+			"Уборка и организация"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по продажам. Хочу изучить творчество и кулинарию."
+	},
+	{
+		"id": "8ab27566-d35b-40bf-b51f-f56e5aed0492",
+		"name": "Арсений",
+		"city": "Красноярск",
+		"bornDate": "1981-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/47.jpg",
+		"teach": "Резюме и собеседование",
+		"learn": ["Навыки обучения", "Питание и ЗОЖ", "Видеомонтаж", "Арт-терапия"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по резюме. Хочу освоить видеомонтаж и ЗОЖ."
+	},
+	{
+		"id": "7cf78de0-fe28-4369-961d-7603713d7393",
+		"name": "Дмитрий",
+		"city": "Новосибирск",
+		"bornDate": "1967-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+		"teach": "Резюме и собеседование",
+		"learn": [
+			"Сон и восстановление",
+			"Личный бренд",
+			"Креативное письмо",
+			"Йога и медитация"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по карьерному росту. Интересуюсь йогой и креативным письмом."
+	},
+	{
+		"id": "b8db13a8-fec4-4003-870d-5cf4cc1cb370",
+		"name": "Максим",
+		"city": "Санкт-Петербург",
+		"bornDate": "1972-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/57.jpg",
+		"teach": "Навыки преподавания",
+		"learn": ["Креативное письмо", "Баланс жизни и работы"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Педагог с опытом. Хочу изучить креативное письмо и баланс."
+	},
+	{
+		"id": "17df2f11-b9bb-45ca-8845-56b4c9f32f8c",
+		"name": "Полина",
+		"city": "Самара",
+		"bornDate": "1968-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/29.jpg",
+		"teach": "Маркетинг и реклама",
+		"learn": ["Предпринимательство", "Питание и ЗОЖ"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по маркетингу. Хочу изучить предпринимательство и ЗОЖ."
+	},
+	{
+		"id": "0f10bcb1-5f25-416e-b75b-4fc728016149",
+		"name": "София",
+		"city": "Москва",
+		"bornDate": "1974-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/49.jpg",
+		"teach": "Китайский",
+		"learn": ["Питание и ЗОЖ", "Продажи и переговоры"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель китайского. Интересуюсь ЗОЖ и продажами."
+	},
+	{
+		"id": "8ef32ba9-d10d-44e5-bd5d-d863556395d7",
+		"name": "Егор",
+		"city": "Уфа",
+		"bornDate": "1985-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/43.jpg",
+		"teach": "Рисование и иллюстрация",
+		"learn": [
+			"Уборка и организация",
+			"Французский",
+			"Английский",
+			"Баланс жизни и работы",
+			"Управление командой"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Художник-иллюстратор. Хочу изучить языки и управление."
+	},
+	{
+		"id": "2169cf24-98d3-4540-9805-1db679fa0e29",
+		"name": "Анна",
+		"city": "Санкт-Петербург",
+		"bornDate": "1965-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/42.jpg",
+		"teach": "Французский",
+		"learn": ["Коучинг", "Скорочтение", "Актёрское мастерство", "Личный бренд"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель французского. Хочу освоить коучинг и скорочтение."
+	},
+	{
+		"id": "b5031e21-5d60-46a5-bc17-6190e026de32",
+		"name": "София",
+		"city": "Новосибирск",
+		"bornDate": "1996-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/42.jpg",
+		"teach": "Личностное развитие",
+		"learn": [
+			"Физические тренировки",
+			"Баланс жизни и работы",
+			"Когнитивные техники",
+			"Французский"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по личностному росту. Хочу изучить французский и ЗОЖ."
+	},
+	{
+		"id": "181549c9-7dc0-4899-9845-bd2ca2794dce",
+		"name": "София",
+		"city": "Красноярск",
+		"bornDate": "1986-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/60.jpg",
+		"teach": "Фотография",
+		"learn": ["Декор и DIY", "Личностное развитие", "Рисование и иллюстрация"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Фотограф с опытом. Интересуюсь декором и личностным развитием."
+	},
+	{
+		"id": "d6df88cf-df3b-4738-8e43-6b3735e468b7",
+		"name": "Екатерина",
+		"city": "Казань",
+		"bornDate": "2003-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/27.jpg",
+		"teach": "Фотография",
+		"learn": [
+			"Физические тренировки",
+			"Уборка и организация",
+			"Подготовка к экзаменам (IELTS, TOEFL)"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Молодой фотограф. Хочу освоить тренировки и экзамены."
+	},
+	{
+		"id": "ad63f8b9-3c15-4721-a576-686eec06528c",
+		"name": "Егор",
+		"city": "Санкт-Петербург",
+		"bornDate": "1971-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/55.jpg",
+		"teach": "Резюме и собеседование",
+		"learn": ["Домашние финансы", "Скорочтение"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по резюме. Интересуюсь финансами и скорочтением."
+	},
+	{
+		"id": "6daa5bf2-214d-40a8-9955-5b61856b7b46",
+		"name": "Алексей",
+		"city": "Москва",
+		"bornDate": "2000-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/42.jpg",
+		"teach": "Хранение вещей",
+		"learn": ["Фотография", "Питание и ЗОЖ", "Декор и DIY", "Тайм-менеджмент"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по организации. Хочу изучить фотографию и тайм-менеджмент."
+	},
+	{
+		"id": "c5c9de33-93ff-444e-9307-e1ea0cc73427",
+		"name": "Юлия",
+		"city": "Пермь",
+		"bornDate": "1990-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+		"teach": "Баланс жизни и работы",
+		"learn": ["Уборка и организация", "Осознанность", "Актёрское мастерство"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по балансу. Интересуюсь осознанностью и актёрским мастерством."
+	},
+	{
+		"id": "edf90deb-e3d3-4c63-a9ae-063081c122fe",
+		"name": "Алексей",
+		"city": "Казань",
+		"bornDate": "1993-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/66.jpg",
+		"teach": "Французский",
+		"learn": [
+			"Японский",
+			"Актёрское мастерство",
+			"Йога и медитация",
+			"Предпринимательство"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель французского. Хочу изучить японский и йогу."
+	},
+	{
+		"id": "b6d957b4-0961-4b0a-a103-f2f48f07fe67",
+		"name": "Дарья",
+		"city": "Нижний Новгород",
+		"bornDate": "1991-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/43.jpg",
+		"teach": "Ремонт",
+		"learn": ["Хранение вещей", "Видеомонтаж"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Мастер ремонта. Интересуюсь видеомонтажом и организацией."
+	},
+	{
+		"id": "7bfbc982-2657-4235-979f-18add02f6719",
+		"name": "Анна",
+		"city": "Челябинск",
+		"bornDate": "1983-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+		"teach": "Подготовка к экзаменам (IELTS, TOEFL)",
+		"learn": [
+			"Физические тренировки",
+			"Маркетинг и реклама",
+			"Домашние растения",
+			"Скорочтение"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по экзаменам. Хочу изучить тренировки и скорочтение."
+	},
+	{
+		"id": "3e21585d-d382-4dab-bad2-69297ebdc620",
+		"name": "Алиса",
+		"city": "Казань",
+		"bornDate": "1976-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/13.jpg",
+		"teach": "Физические тренировки",
+		"learn": ["Сон и восстановление", "Декор и DIY", "Баланс жизни и работы"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Тренер по фитнесу. Интересуюсь декором и восстановлением."
+	},
+	{
+		"id": "0e9874ce-11ac-4b79-a878-e3246e6dc530",
+		"name": "Кирилл",
+		"city": "Ростов-на-Дону",
+		"bornDate": "1988-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/72.jpg",
+		"teach": "Декор и DIY",
+		"learn": ["Английский", "Испанский", "Рисование и иллюстрация"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по декору. Хочу изучить языки и рисование."
+	},
+	{
+		"id": "4bddc902-2946-44fb-846a-64cafb8c4c86",
+		"name": "Полина",
+		"city": "Санкт-Петербург",
+		"bornDate": "1971-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/40.jpg",
+		"teach": "Баланс жизни и работы",
+		"learn": ["Рисование и иллюстрация", "Английский"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Эксперт по балансу. Интересуюсь рисованием и английским."
+	},
+	{
+		"id": "f76c48e0-c157-4428-8e26-5814e1aa7504",
+		"name": "Кирилл",
+		"city": "Нижний Новгород",
+		"bornDate": "1993-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+		"teach": "Испанский",
+		"learn": [
+			"Тайм-менеджмент",
+			"Ремонт",
+			"Рисование и иллюстрация",
+			"Маркетинг и реклама"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель испанского. Хочу освоить маркетинг и ремонт."
+	},
+	{
+		"id": "31789338-bdf1-4197-ad6b-61621d1a187b",
+		"name": "Алиса",
+		"city": "Уфа",
+		"bornDate": "2006-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/28.jpg",
+		"teach": "Японский",
+		"learn": ["Немецкий", "Ремонт", "Французский"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель японского. Хочу изучить немецкий и ремонт."
+	},
+	{
+		"id": "ac03dd6d-0959-444a-b7e0-e10465be27ae",
+		"name": "Полина",
+		"city": "Екатеринбург",
+		"bornDate": "1991-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/98.jpg",
+		"teach": "Продажи и переговоры",
+		"learn": ["Тайм-менеджмент", "Управление командой", "Йога и медитация"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Специалист по продажам. Интересуюсь йогой и управлением."
+	},
+	{
+		"id": "da592be9-9436-4290-b28d-8e6b4b177500",
+		"name": "Алексей",
+		"city": "Пермь",
+		"bornDate": "2006-01-01",
+		"avatar": "https://randomuser.me/api/portraits/men/53.jpg",
+		"teach": "Питание и ЗОЖ",
+		"learn": ["Музыка и звук", "Личностное развитие", "Приготовление еды"],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Знаток ЗОЖ. Хочу изучить музыку и кулинарию."
+	},
+	{
+		"id": "7a1fcff0-519a-4ed5-b491-ab343f20a438",
+		"name": "Мария",
+		"city": "Москва",
+		"bornDate": "1984-01-01",
+		"avatar": "https://randomuser.me/api/portraits/women/7.jpg",
+		"teach": "Немецкий",
+		"learn": [
+			"Личностное развитие",
+			"Коучинг",
+			"Фотография",
+			"Китайский",
+			"Тайм-менеджмент"
+		],
+		"isFavorite": false,
+		"isExchangeRequested": false,
+		"description": "Преподаватель немецкого. Интересуюсь коучингом и фотографией."
+	}
+]

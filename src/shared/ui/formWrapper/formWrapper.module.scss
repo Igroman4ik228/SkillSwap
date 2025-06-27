@@ -1,0 +1,12 @@
+@use '@/shared/styles' as *;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	width: 556px;
+	min-height: 692px;
+	padding: 60px;
+	background-color: $color-white;
+	border-radius: 12px;
+}
