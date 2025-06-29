@@ -11,6 +11,8 @@
 
 **Skill Swap** is a web application for exchanging skills between users. Users can offer their expertise and find people willing to exchange knowledge in a mentorship or collaboration format. The project is aimed at self-development and professional growth through mutual assistance.
 
+**[Project Code Rules](./CODING_GUIDELINES.md)**
+
 ## Scripts
 
 Before running the project, make sure to install all dependencies `npm install`
@@ -34,5 +36,3 @@ Use commands in the format `npm run <script_name>`
 ## Project Structure
 
 The project follows the [Feature-Sliced Design (FSD)](https://feature-sliced.design/). This is an architectural approach focused on scalability and maintainability of frontend applications.
-
-**SCSS modules** are used for styling, providing style encapsulation and scalability.
