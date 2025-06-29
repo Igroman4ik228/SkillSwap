@@ -1,0 +1,7 @@
+.containerMain {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	width: 1368px;
+	margin: 32px 36px 60px;
+}

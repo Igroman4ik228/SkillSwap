@@ -23,6 +23,10 @@ export const router = createBrowserRouter([
 				// Загружаем только, если она открыта
 				lazy: () => import('@/pages/skills'),
 			},
+			{
+				path: ROUTES.SKILL,
+				lazy: () => import('@/pages/skill'),
+			},
 
 			// Защищённые пути, только для авторизованных
 			{

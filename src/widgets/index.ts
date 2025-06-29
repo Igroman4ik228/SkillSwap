@@ -10,3 +10,4 @@ export * from './userCards';
 export * from './userDataChangeForm';
 export * from './usersSection';
 export * from './offeredExchangeModal';
+export * from './notification';

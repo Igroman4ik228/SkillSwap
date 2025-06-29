@@ -1,0 +1,89 @@
+@use '@/shared/styles' as *;
+
+svg {
+	path {
+		vector-effect: non-scaling-stroke;
+	}
+}
+
+.notificationPopup {
+	// min-width: 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+}
+
+.infoWrapper {
+	display: grid;
+	grid-template-columns: max-content 1fr auto;
+	grid-auto-flow: column;
+	gap: 8px;
+	color: $color-text;
+	font-family: $font-main;
+}
+
+.popupTitle {
+	font-size: $font-size-h4;
+	line-height: $line-height-h4;
+}
+
+.description {
+	font-size: $font-size-caption;
+	line-height: $line-height-caption;
+}
+
+.date {
+	justify-self: end;
+	color: $color-caption;
+	font-size: $font-size-body;
+	font-family: $font-main;
+	line-height: $line-height-body;
+}
+
+.popupButton {
+	width: fit-content;
+}
+
+.mainButton {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	padding: 8px 12px;
+	font-size: $font-size-caption;
+	font-family: $font-main;
+	line-height: $line-height-caption;
+	border-radius: 20px;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.notificationMain {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 8px;
+	width: 100%;
+	padding: 24px;
+	color: $color-text;
+	background-color: $color-hover;
+	border-radius: 12px;
+
+	&:hover .mainButton {
+		visibility: visible;
+	}
+}
+
+.mainTitle {
+	font-size: $font-size-h3;
+	font-family: $font-title;
+	line-height: $line-height-h3;
+}
+
+.cross {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor: pointer;
+}

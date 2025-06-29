@@ -1,22 +1,26 @@
-import { Button, ROUTES } from '@/shared';
-import { Link, useNavigate } from 'react-router-dom';
+import { Button, ROUTES, useDropdown } from '@/shared';
+import { useNavigate } from 'react-router-dom';
+import { UserDropdown } from '@/shared/ui/userDropdown';
 import cls from './authBlock.module.scss';
 import type { AuthBlockProps } from './type';
 
 export const AuthBlock = ({ user }: AuthBlockProps) => {
 	const navigate = useNavigate();
+	const { isOpen, toggleDropdown, dropdownRef } = useDropdown();
 
 	const handleOpenSignIn = () => navigate(ROUTES.LOGIN);
 	const handleOpenSignUp = () => navigate(ROUTES.REGISTER);
 
 	if (user) {
 		return (
-			<Link className={cls.user} to={ROUTES.PROFILE}>
+			// eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
+			<div className={cls.user} onClick={toggleDropdown} ref={dropdownRef}>
 				<p>{user.name}</p>
 				<div className={cls.avatar}>
 					<img src={user.avatar} alt='аватарка' />
 				</div>
-			</Link>
+				{isOpen && <UserDropdown />}
+			</div>
 		);
 	}
 
