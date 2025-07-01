@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react-swc';
+import autoprefixer from 'autoprefixer';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import reactSVG from 'vite-react-svg';
@@ -12,5 +13,10 @@ export default defineConfig({
 	},
 	server: {
 		open: true, // Открывает браузер при старте dev-сервера
+	},
+	css: {
+		postcss: {
+			plugins: [autoprefixer],
+		},
 	},
 });
