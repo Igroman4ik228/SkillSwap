@@ -12,8 +12,10 @@
 		background-color: $color-accent;
 		border-radius: 12px;
 
-		&:hover {
-			background-color: $color-hover;
+		@include interactive-hover {
+			&:hover {
+				background-color: $color-hover;
+			}
 		}
 
 		&:active {
@@ -34,9 +36,11 @@
 		border: 1px solid $color-accent;
 		border-radius: 12px;
 
-		&:hover {
-			color: $color-caption;
-			border-color: $color-hover;
+		@include interactive-hover {
+			&:hover {
+				color: $color-caption;
+				border-color: $color-hover;
+			}
 		}
 
 		&:active {
