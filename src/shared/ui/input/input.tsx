@@ -11,7 +11,6 @@ export const Input = ({
 	fullWidth = true,
 	icon,
 	ref,
-	type,
 	className,
 	...props
 }: InputProps) => {
@@ -20,14 +19,16 @@ export const Input = ({
 	const errorId = `${id}-error`;
 
 	return (
-		<div className={clsx(cls.input, className)}>
+		<div
+			className={clsx(cls.input, fullWidth && cls.input_fullWidth, className)}
+		>
 			{title && (
 				<label className={cls.title} htmlFor={id}>
 					{title}
 				</label>
 			)}
 
-			<div className={clsx(cls.fieldWrapper, fullWidth && cls.fullWidth)}>
+			<div className={cls.fieldWrapper}>
 				<input
 					className={clsx(
 						cls.field,
@@ -36,14 +37,13 @@ export const Input = ({
 					)}
 					aria-invalid={error}
 					aria-describedby={error ? errorId : undefined}
-					type={type}
 					ref={ref}
 					id={id}
 					{...props}
 				/>
 				{icon && (
 					<Icon
-						Svg={icon.svg}
+						Svg={icon.Svg}
 						onClick={icon.onClick}
 						className={cls.icon}
 						aria-label={icon['aria-label']}

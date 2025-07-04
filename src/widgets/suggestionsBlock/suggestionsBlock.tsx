@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { UserCard } from '@/widgets/userCard/ui';
-import { Icon } from '@/shared/ui/icon';
 import ChevronRightIcon from '@/shared/assets/icons/chevron-right.svg?react';
-import type { SuggestionsBlockProps } from './type';
+import { Icon } from '@/shared/ui/icon';
+import { UserCard } from '@/widgets/userCard/ui';
+import { useState } from 'react';
 import styles from './suggestionsBlock.module.scss';
+import type { SuggestionsBlockProps } from './type';
 
 const MAX_CARDS = 4;
 

@@ -1,20 +1,21 @@
 @use '@/shared/styles' as *;
 
 .input {
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	gap: 4px;
-	width: 100%;
+
+	&_fullWidth {
+		width: 100%;
+	}
 }
 
 .fieldWrapper {
 	position: relative;
-	display: flex;
-	align-self: flex-start;
 }
 
 .field {
-	flex: 1;
+	width: 100%;
 	padding: 12px 20px;
 	border: 1px solid $color-caption;
 	border-radius: 12px;
@@ -51,8 +52,4 @@
 	&_active {
 		color: $color-error;
 	}
-}
-
-.fullWidth {
-	width: 100%;
 }

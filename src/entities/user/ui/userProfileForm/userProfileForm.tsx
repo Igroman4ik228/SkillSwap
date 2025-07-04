@@ -1,16 +1,16 @@
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import { updateUser } from '@/entities/user/model/thunks';
-import { Input } from '@/shared/ui/input/input';
-import { useTypedDispatch, useTypedSelector } from '@/shared/hooks/store';
 import { Button, Preloader } from '@/shared';
-import { NavLink } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
 import EditIcon from '@/shared/assets/icons/edit.svg?react';
+import { useTypedDispatch, useTypedSelector } from '@/shared/hooks/store';
+import { Input } from '@/shared/ui/input/input';
 import { Textarea } from '@/shared/ui/textarea/textarea';
-import { profileSchema } from './validation';
-import styles from './userProfileForm.module.scss';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useEffect, useRef } from 'react';
+import { useForm } from 'react-hook-form';
+import { NavLink } from 'react-router-dom';
 import { userSelectors } from '../../model';
+import styles from './userProfileForm.module.scss';
+import { profileSchema } from './validation';
 
 // TODO: заменить селекты на дропдауны и инпут с датой на календарь
 
@@ -90,7 +90,7 @@ export const UserProfileForm = () => {
 					emailRef.current = e;
 				}}
 				icon={{
-					svg: EditIcon,
+					Svg: EditIcon,
 					onClick: () => emailRef.current?.focus(),
 				}}
 			/>
@@ -107,7 +107,7 @@ export const UserProfileForm = () => {
 				error={!!errors.name}
 				errorText={errors.name?.message}
 				icon={{
-					svg: EditIcon,
+					Svg: EditIcon,
 					onClick: () => nameRef.current?.focus(),
 				}}
 			/>
@@ -148,7 +148,7 @@ export const UserProfileForm = () => {
 				error={!!errors.description}
 				errorText={errors.description?.message}
 				icon={{
-					svg: EditIcon,
+					Svg: EditIcon,
 					onClick: () => descriptionRef.current?.focus(),
 				}}
 				rows={4}

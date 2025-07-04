@@ -17,12 +17,7 @@ const userCardMock: TUserCard = {
 	city: 'Ростов-на-Дону',
 	age: 27,
 	teach: 'Управление командой',
-	learn: [
-		'Тайм-менеджмент',
-		'Медитация',
-		'Проектное управление',
-		'Продажи и переговоры',
-	],
+	learn: ['Тайм-менеджмент', 'Проектное управление', 'Продажи и переговоры'],
 	avatar: 'images/user-avatar.jpg',
 	isFavorite: false,
 	isExchangeRequested: false,
