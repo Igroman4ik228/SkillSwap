@@ -1,7 +1,11 @@
 import type { ButtonHTMLAttributes, Ref } from 'react';
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+export type TBaseButton = {
 	appearance?: 'primary' | 'secondary' | 'tertiary';
 	fullWidth?: boolean;
-	ref?: Ref<HTMLButtonElement>;
 };
+
+export type ButtonProps = TBaseButton &
+	ButtonHTMLAttributes<HTMLButtonElement> & {
+		ref?: Ref<HTMLButtonElement>;
+	};
