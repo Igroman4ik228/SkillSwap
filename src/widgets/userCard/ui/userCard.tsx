@@ -1,8 +1,8 @@
-import { Button, Icon, ROUTES } from '@/shared';
+import { Icon, RouterLinkButton, ROUTES } from '@/shared';
 import LikeActiveIcon from '@/shared/assets/icons/like-active.svg?react';
 import LikeIcon from '@/shared/assets/icons/like.svg?react';
 import { useState } from 'react';
-import { generatePath, Link } from 'react-router-dom';
+import { generatePath } from 'react-router-dom';
 import { formatAge } from '../lib/formatAge';
 import { SkillList } from './skillList';
 import type { UserCardProps } from './type';
@@ -78,11 +78,12 @@ export const UserCard = ({
 				</section>
 			</div>
 
-			<Link to={generatePath(ROUTES.SKILL, { skillId: id })}>
-				<Button appearance={isExchangeRequested ? 'secondary' : 'primary'}>
-					{isExchangeRequested ? 'Обмен предложен' : 'Подробнее'}
-				</Button>
-			</Link>
+			<RouterLinkButton
+				to={generatePath(ROUTES.SKILL, { skillId: id })}
+				appearance={isExchangeRequested ? 'secondary' : 'primary'}
+			>
+				{isExchangeRequested ? 'Обмен предложен' : 'Подробнее'}
+			</RouterLinkButton>
 		</div>
 	);
 };
