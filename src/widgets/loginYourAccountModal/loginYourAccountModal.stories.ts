@@ -10,8 +10,4 @@ const meta: Meta<typeof LoginYourAccountModal> = {
 export default meta;
 type Story = StoryObj<typeof LoginYourAccountModal>;
 
-export const Opened: Story = {
-	args: {
-		isOpen: true,
-	},
-};
+export const Opened: Story = {};

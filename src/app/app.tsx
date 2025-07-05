@@ -3,6 +3,7 @@ import { useHeaderAppearance, useTypedDispatch } from '@/shared';
 import { Footer, Header } from '@/widgets';
 import { useEffect, type ReactNode } from 'react';
 import { Outlet } from 'react-router-dom';
+import { ModalProvider } from '@/shared/lib';
 import cls from './app.module.scss';
 
 export const App = ({ children }: { children?: ReactNode }) => {
@@ -14,10 +15,12 @@ export const App = ({ children }: { children?: ReactNode }) => {
 	}, [dispatch]);
 
 	return (
-		<div className={cls.stickyFooter}>
-			<Header appearance={headerAppearance} />
-			<main>{children ?? <Outlet />}</main>
-			<Footer className={cls.footer} />
-		</div>
+		<ModalProvider>
+			<div className={cls.stickyFooter}>
+				<Header appearance={headerAppearance} />
+				<main>{children ?? <Outlet />}</main>
+				<Footer className={cls.footer} />
+			</div>
+		</ModalProvider>
 	);
 };

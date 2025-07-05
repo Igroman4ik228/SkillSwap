@@ -4,11 +4,10 @@ import type { LoginYourAccountModalProps } from './type';
 import styles from './loginYourAccountModal.module.scss';
 
 export const LoginYourAccountModal = ({
-	isOpen,
 	onClose,
 }: LoginYourAccountModalProps) => {
 	return (
-		<Modal {...{ isOpen, onClose }} className={styles.createOfferModal}>
+		<Modal onClose={onClose} className={styles.createOfferModal}>
 			<Icon Svg={UserCircle} width={100} height={100} className={styles.icon} />
 			<h2 className={styles.title}>Пожалуйста, войдите в аккаунт</h2>
 			<p className={styles.description}>
