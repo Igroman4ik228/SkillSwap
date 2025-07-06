@@ -4,11 +4,10 @@ import type { OfferedExchangeModalProps } from './type';
 import styles from './OfferedExchangeModal.module.scss';
 
 export const OfferedExchangeModal = ({
-	isOpen,
 	onClose,
 }: OfferedExchangeModalProps) => {
 	return (
-		<Modal {...{ isOpen, onClose }} className={styles.createOfferModal}>
+		<Modal onClose={onClose} className={styles.createOfferModal}>
 			<Icon
 				Svg={Notification}
 				width={100}

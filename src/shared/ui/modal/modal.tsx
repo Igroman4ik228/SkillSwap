@@ -2,10 +2,9 @@ import { useEffect } from 'react';
 import clsx from 'clsx';
 import { ModalOverlay } from '../modalOverlay';
 import styles from './modal.module.scss';
-
 import type { ModalProps } from './type';
 
-export const Modal = ({ isOpen, onClose, children, className }: ModalProps) => {
+export const Modal = ({ onClose, children, className }: ModalProps) => {
 	useEffect(() => {
 		const handleEsc = (e: KeyboardEvent) => {
 			if (e.key === 'Escape') onClose();
@@ -18,11 +17,9 @@ export const Modal = ({ isOpen, onClose, children, className }: ModalProps) => {
 	}, [onClose]);
 
 	return (
-		isOpen && (
-			<>
-				<div className={clsx(styles.modal, className)}>{children}</div>
-				<ModalOverlay onClick={onClose} />
-			</>
-		)
+		<>
+			<div className={clsx(styles.modal, className)}>{children}</div>
+			<ModalOverlay onClick={onClose} />
+		</>
 	);
 };

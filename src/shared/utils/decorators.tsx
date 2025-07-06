@@ -5,6 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import type { DeepPartial } from './types';
 // No FSD
 import { rootReducer } from '../../app/store';
+import { ModalProvider } from '../lib';
 
 export const StoreDecorator =
 	(initialState: DeepPartial<RootState> = {}) =>
@@ -26,5 +27,13 @@ export const MemoryRouteDecorator = () => (Story: ComponentType) => {
 		<MemoryRouter>
 			<Story />
 		</MemoryRouter>
+	);
+};
+
+export const ModalDecorator = () => (Story: ComponentType) => {
+	return (
+		<ModalProvider>
+			<Story />
+		</ModalProvider>
 	);
 };
