@@ -10,8 +10,4 @@ const meta: Meta<typeof CreateOfferModal> = {
 export default meta;
 type Story = StoryObj<typeof CreateOfferModal>;
 
-export const Opened: Story = {
-	args: {
-		isOpen: true,
-	},
-};
+export const Opened: Story = {};

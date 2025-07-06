@@ -17,8 +17,4 @@ const meta: Meta<typeof OfferedExchangeModal> = {
 export default meta;
 type Story = StoryObj<typeof OfferedExchangeModal>;
 
-export const Opened: Story = {
-	args: {
-		isOpen: true,
-	},
-};
+export const Opened: Story = {};
