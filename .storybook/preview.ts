@@ -2,11 +2,12 @@ import '@/app/styles/index.scss';
 import type { Preview } from '@storybook/react-vite';
 import {
 	MemoryRouteDecorator,
+	ModalDecorator,
 	StoreDecorator,
 } from '../src/shared/utils/decorators';
 
 const preview: Preview = {
-	decorators: [StoreDecorator(), MemoryRouteDecorator()],
+	decorators: [StoreDecorator(), MemoryRouteDecorator(), ModalDecorator()],
 	parameters: {
 		controls: {
 			matchers: {

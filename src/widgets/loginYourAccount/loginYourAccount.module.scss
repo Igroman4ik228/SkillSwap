@@ -1,15 +1,11 @@
 @use '@/shared/styles' as *;
 
-.createOfferModal {
+.loginAccount {
 	width: 556px;
 	text-align: center;
 
 	.icon {
 		margin-bottom: 52px;
-
-		path {
-			vector-effect: non-scaling-stroke;
-		}
 	}
 
 	.title {
@@ -24,7 +20,7 @@
 		margin-block-end: 32px;
 	}
 
-	.button_wrapper {
+	.buttonWrapper {
 		display: flex;
 		gap: 20px;
 	}

@@ -6,14 +6,10 @@
 
 	.icon {
 		margin-bottom: 52px;
-
-		path {
-			vector-effect: non-scaling-stroke;
-		}
 	}
 
 	.title {
-		margin-block-end: 12px;
+		margin-bottom: 12px;
 		font-weight: 500;
 		font-size: $font-size-h2;
 		font-family: $font-title;
@@ -21,6 +17,6 @@
 	}
 
 	.description {
-		margin-block-end: 32px;
+		margin-bottom: 32px;
 	}
 }
