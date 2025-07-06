@@ -4,5 +4,5 @@ type SvgProps = Omit<SVGProps<SVGSVGElement>, 'onClick'>;
 
 export type IconProps = SvgProps & {
 	Svg: FC<SVGProps<SVGSVGElement>>;
-	onClick?: () => void;
+	onClick?: (e?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };

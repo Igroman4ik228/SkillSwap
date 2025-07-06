@@ -24,7 +24,7 @@ export const SearchInput = () => {
 				icon={
 					searchValue
 						? {
-								svg: ClearIcon,
+								Svg: ClearIcon,
 								onClick: handleClear,
 								'aria-label': 'Очистить поле поиска',
 							}

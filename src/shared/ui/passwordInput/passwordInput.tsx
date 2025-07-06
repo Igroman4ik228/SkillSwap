@@ -31,7 +31,7 @@ export const PasswordInput = ({
 			className={className}
 			type={inputType}
 			icon={{
-				svg: isPasswordVisible ? EyeSlashIcon : EyeIcon,
+				Svg: isPasswordVisible ? EyeSlashIcon : EyeIcon,
 				onClick: togglePasswordVisibility,
 			}}
 			{...props}

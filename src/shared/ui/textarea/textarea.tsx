@@ -19,14 +19,20 @@ export const Textarea = ({
 	const errorId = `${id}-error`;
 
 	return (
-		<div className={clsx(cls.input, className)}>
+		<div
+			className={clsx(
+				cls.textarea,
+				fullWidth && cls.textarea_fullWidth,
+				className
+			)}
+		>
 			{title && (
 				<label className={cls.title} htmlFor={id}>
 					{title}
 				</label>
 			)}
 
-			<div className={clsx(cls.fieldWrapper, fullWidth && cls.fullWidth)}>
+			<div className={cls.fieldWrapper}>
 				<textarea
 					className={clsx(
 						cls.field,
@@ -40,7 +46,7 @@ export const Textarea = ({
 					{...props}
 				/>
 				{icon && (
-					<Icon Svg={icon.svg} onClick={icon.onClick} className={cls.icon} />
+					<Icon Svg={icon.Svg} onClick={icon.onClick} className={cls.icon} />
 				)}
 			</div>
 			{errorText && (

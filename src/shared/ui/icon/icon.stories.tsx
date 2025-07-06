@@ -14,6 +14,8 @@ type Story = StoryObj<typeof Icon>;
 export const Primary: Story = {
 	args: {
 		Svg: LogoIcon,
+		width: 100,
+		height: 100,
 	},
 };
 
@@ -21,5 +23,7 @@ export const Clickable: Story = {
 	args: {
 		Svg: LogoIcon,
 		onClick: () => {},
+		width: 100,
+		height: 100,
 	},
 };

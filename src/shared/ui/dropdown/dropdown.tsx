@@ -193,7 +193,7 @@ export const Dropdown = ({
 									setIsTyping(false);
 									setIsOpen(false);
 								},
-								svg: Сross,
+								Svg: Сross,
 							}}
 						/>
 					</div>

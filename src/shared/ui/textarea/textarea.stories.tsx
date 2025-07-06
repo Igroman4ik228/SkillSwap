@@ -41,7 +41,7 @@ export const WithIcon: Story = {
 		placeholder: 'Напишите о себе',
 		errorText: 'Обязательное поле',
 		icon: {
-			svg: EditIcon,
+			Svg: EditIcon,
 			onClick: () => {},
 		},
 	},

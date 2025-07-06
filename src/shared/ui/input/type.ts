@@ -1,14 +1,11 @@
-import type { FC, InputHTMLAttributes, Ref, SVGProps } from 'react';
+import type { InputHTMLAttributes, Ref } from 'react';
+import type { IconProps } from '../icon';
 
 export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 	title?: string;
 	errorText?: string;
 	error?: boolean;
 	fullWidth?: boolean;
-	icon?: {
-		svg: FC<SVGProps<SVGSVGElement>>;
-		onClick?: (e?: MouseEvent) => void;
-		'aria-label'?: string;
-	};
+	icon?: IconProps;
 	ref?: Ref<HTMLInputElement>;
 };

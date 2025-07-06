@@ -12,24 +12,23 @@ export const Icon = ({
 }: IconProps) => {
 	const icon = (
 		<Svg
+			className={clsx(!onClick && className)}
 			{...(width ? { width } : {})}
 			{...(height ? { height } : {})}
 			{...props}
 		/>
 	);
 
-	if (onClick) {
-		return (
-			<button
-				style={{ height, width }}
-				className={clsx(cls.button, className)}
-				onClick={onClick}
-				type='button'
-			>
-				{icon}
-			</button>
-		);
-	}
+	if (!onClick) return icon;
 
-	return icon;
+	return (
+		<button
+			style={{ height, width }}
+			className={clsx(cls.button, className)}
+			onClick={onClick}
+			type='button'
+		>
+			{icon}
+		</button>
+	);
 };

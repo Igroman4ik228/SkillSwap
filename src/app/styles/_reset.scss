@@ -1,31 +1,25 @@
 /* Reset and base styles  */
 
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	border: none;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+::before,
+::after {
+	box-sizing: inherit;
 }
 
 /* Links */
 
-a {
-	color: inherit;
-	font-family: inherit;
-}
-
 a,
 a:link,
-a:visited {
-	text-decoration: none;
-}
-
+a:visited,
 a:hover {
+	color: inherit;
+	font: inherit;
 	text-decoration: none;
 }
 
@@ -47,8 +41,7 @@ h4,
 h5,
 h6,
 p {
-	font-weight: inherit;
-	font-size: inherit;
+	font: inherit;
 }
 
 ul,
@@ -61,13 +54,23 @@ img {
 }
 
 img,
-svg {
+svg,
+picture {
 	max-width: 100%;
 	height: auto;
 }
 
+svg * {
+	transition-property: fill, stroke;
+}
+
 address {
 	font-style: normal;
+}
+
+table {
+	border-color: currentcolor;
+	border-collapse: collapse;
 }
 
 /* Form */
@@ -77,9 +80,7 @@ textarea,
 button,
 select {
 	color: inherit;
-	font-size: inherit;
-	font-family: inherit;
-	line-height: inherit;
+	font: inherit;
 	background-color: transparent;
 }
 
@@ -87,13 +88,18 @@ input::-ms-clear {
 	display: none;
 }
 
-button,
-input[type='submit'] {
+button {
 	display: inline-block;
 	background: none;
 	background-color: transparent;
 	box-shadow: none;
 	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+textarea,
+input[type='file'] {
+	max-width: 100%;
 }
 
 input:focus,
@@ -116,6 +122,15 @@ legend {
 	display: block;
 }
 
-input[type='file'] {
-	max-width: 100%;
+/* Disable animation */
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	::before,
+	::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+	}
 }

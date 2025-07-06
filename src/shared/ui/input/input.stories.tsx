@@ -41,7 +41,7 @@ export const WithIcon: Story = {
 		placeholder: 'Введите имя',
 		errorText: 'Имя должно содержать не менее 8 знаков',
 		icon: {
-			svg: EditIcon,
+			Svg: EditIcon,
 			onClick: () => {},
 		},
 	},
