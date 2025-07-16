@@ -1,9 +1,6 @@
-import { Link } from 'react-router-dom';
 import { ROUTES } from '@/shared';
-
-import LogoutIcon from '@/shared/assets/icons/logout.svg?react';
-
-import { Icon } from '@/shared/ui/icon';
+import { Link } from 'react-router-dom';
+import { LogoutButton } from './logoutButton';
 import styles from './userDropdown.module.scss';
 
 export const UserDropdown = () => {
@@ -16,23 +13,7 @@ export const UserDropdown = () => {
 			<Link className={styles.item} to={ROUTES.PROFILE}>
 				Личный кабинет
 			</Link>
-
-			<div className={styles.logout}>
-				<div
-					className={styles.item}
-					role='button'
-					tabIndex={0}
-					onClick={handleLogout}
-					onKeyDown={(e) => {
-						if (e.key === 'Enter' || e.key === ' ') {
-							handleLogout();
-						}
-					}}
-				>
-					Выйти из аккаунта
-				</div>
-				<Icon Svg={LogoutIcon} />
-			</div>
+			<LogoutButton onLogout={handleLogout} />
 		</div>
 	);
 };

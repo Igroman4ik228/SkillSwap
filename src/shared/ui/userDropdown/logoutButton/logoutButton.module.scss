@@ -1,0 +1,7 @@
+@use '@/shared/styles' as *;
+
+.logout {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}

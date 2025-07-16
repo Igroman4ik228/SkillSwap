@@ -10,25 +10,22 @@ export const Icon = ({
 	height,
 	...props
 }: IconProps) => {
-	const icon = (
-		<Svg
-			className={clsx(!onClick && className)}
-			{...(width ? { width } : {})}
-			{...(height ? { height } : {})}
-			{...props}
-		/>
-	);
+	const SvgProps = {
+		className: clsx(!onClick && className),
+		style: { height, width },
+		...props,
+	};
 
-	if (!onClick) return icon;
+	if (!onClick) return <Svg {...SvgProps} />;
 
 	return (
 		<button
-			style={{ height, width }}
 			className={clsx(cls.button, className)}
+			style={{ height, width }}
 			onClick={onClick}
 			type='button'
 		>
-			{icon}
+			<Svg {...SvgProps} />
 		</button>
 	);
 };

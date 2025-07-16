@@ -5,9 +5,6 @@ const meta: Meta<typeof UserDropdown> = {
 	title: 'shared/UserDropdown',
 	component: UserDropdown,
 	tags: ['autodocs'],
-	parameters: {
-		layout: 'fullscreen',
-	},
 	decorators: [
 		(Story) => (
 			<div
@@ -18,13 +15,7 @@ const meta: Meta<typeof UserDropdown> = {
 					margin: '0 auto',
 				}}
 			>
-				<div
-					style={{
-						position: 'relative', // сбрасываем влияние absolute у дропдауна
-					}}
-				>
-					<Story />
-				</div>
+				<Story />
 			</div>
 		),
 	],
@@ -33,6 +24,4 @@ const meta: Meta<typeof UserDropdown> = {
 export default meta;
 type Story = StoryObj<typeof UserDropdown>;
 
-export const Default: Story = {
-	render: () => <UserDropdown />,
-};
+export const Default: Story = {};
