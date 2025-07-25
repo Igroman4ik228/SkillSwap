@@ -15,6 +15,11 @@ export default defineConfig({
 		open: true, // Открывает браузер при старте dev-сервера
 	},
 	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: "@use '@/shared/styles' as *;",
+			},
+		},
 		postcss: {
 			plugins: [autoprefixer],
 		},
