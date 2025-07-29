@@ -7,7 +7,14 @@ const meta: Meta<typeof AuthBlock> = {
 	tags: ['autodocs'],
 	decorators: [
 		(Story) => (
-			<div style={{ width: '310px', margin: '0 auto' }}>
+			<div
+				style={{
+					width: '310px',
+					margin: '0 auto',
+					display: 'flex',
+					justifyContent: 'center',
+				}}
+			>
 				<Story />
 			</div>
 		),

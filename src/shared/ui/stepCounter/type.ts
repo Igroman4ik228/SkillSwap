@@ -1,4 +1,4 @@
-export type TStepCounterProp = {
+export type StepCounterProps = {
 	currentStep?: number;
 	totalSteps?: number;
 };

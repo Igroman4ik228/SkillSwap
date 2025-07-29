@@ -1,30 +1,28 @@
-@use '@/shared/styles' as *;
-
-.counterWrapper {
+.stepCounter {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 12px;
 }
 
-.partTitle {
+.title {
 	font-size: $font-size-h2;
 	font-family: $font-title;
 }
 
-.part {
+.steps {
+	display: flex;
+	gap: 16px;
+}
+
+.step {
 	display: block;
 	width: 60px;
 	height: 4px;
 	background-color: $color-disabled;
 	border-radius: 8px;
-}
 
-.stepActive {
-	background-color: $color-accent;
-}
-
-.stepsWrapper {
-	display: flex;
-	gap: 16px;
+	&_active {
+		background-color: $color-accent;
+	}
 }

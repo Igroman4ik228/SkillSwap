@@ -2,7 +2,7 @@
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react&logoColor=white)](https://react.dev/)
-[![VITE](https://img.shields.io/badge/Vite-7-yellow?style=flat&logo=vite&logoColor=white)](https://vite.dev/)
+[![VITE](https://img.shields.io/badge/Vite-6-yellow?style=flat&logo=vite&logoColor=white)](https://vite.dev/)
 [![RTK](https://img.shields.io/badge/ReduxToolkit-2-purple?style=flat&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
 
 **[Русская версия](./RU_README.md)**
