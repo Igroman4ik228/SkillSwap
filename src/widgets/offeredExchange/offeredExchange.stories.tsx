@@ -1,20 +1,19 @@
 import { useModal } from '@/shared/lib';
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { LoginYourAccount } from './loginYourAccount';
+import { OfferedExchange } from './offeredExchange';
 
-const meta: Meta<typeof LoginYourAccount> = {
-	title: 'Widgets/LoginYourAccount',
-	component: LoginYourAccount,
+const meta: Meta<typeof OfferedExchange> = {
+	title: 'Widgets/OfferedExchange',
+	component: OfferedExchange,
 	tags: ['autodocs'],
 };
 
 export default meta;
-type Story = StoryObj<typeof LoginYourAccount>;
+type Story = StoryObj<typeof OfferedExchange>;
 
 export const Primary: Story = {
 	args: {
-		onCancel: () => console.log('onCancel'),
-		onSignIn: () => console.log('onSignIn'),
+		onDone: () => console.log('onDone!'),
 	},
 };
 
@@ -24,13 +23,9 @@ export const Modal: Story = {
 
 		const handleOpenModal = () => {
 			openModal(
-				<LoginYourAccount
-					onCancel={() => {
-						console.log('onCancel');
-						closeModal();
-					}}
-					onSignIn={() => {
-						console.log('onSignIn');
+				<OfferedExchange
+					onDone={() => {
+						console.log('onDone!');
 						closeModal();
 					}}
 				/>

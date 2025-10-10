@@ -71,5 +71,14 @@ module.exports = {
 		'react/display-name': 'off',
 		'no-plusplus': 'off',
 		'react/button-has-type': 'off',
+		'no-console': 'warn',
 	},
+	overrides: [
+		{
+			files: ['**/*.stories.@(ts|tsx|js|jsx)'],
+			rules: {
+				'no-console': 'off',
+			},
+		},
+	],
 };

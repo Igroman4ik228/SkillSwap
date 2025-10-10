@@ -1,11 +1,15 @@
 .modal {
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	z-index: 9999;
-	margin: auto;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	z-index: $z-index-modal;
+	display: flex;
 	padding: 62px 60px;
 	background-color: #ffffff;
 	border-radius: 12px;
-	transform: translate(-50%, -50%);
 }

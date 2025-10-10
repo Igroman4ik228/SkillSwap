@@ -5,10 +5,6 @@ export type TModalContext = {
 	closeModal: () => void;
 };
 
-export type TModalState = {
-	modalChildren: ReactNode;
-};
-
 export type ModalProviderProps = {
 	children: ReactNode;
 };

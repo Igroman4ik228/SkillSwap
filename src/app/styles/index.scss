@@ -24,6 +24,7 @@ button:focus-visible {
 body,
 html,
 #root {
+	z-index: $z-index-root;
 	height: 100%;
 	scroll-behavior: smooth;
 }
@@ -37,4 +38,9 @@ body {
 	line-height: $line-height-body;
 	background-color: $bg-color;
 	text-rendering: optimizespeed;
+}
+
+#modal {
+	position: relative;
+	z-index: $z-index-modal;
 }

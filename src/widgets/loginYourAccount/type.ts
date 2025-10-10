@@ -1,3 +1,4 @@
 export type LoginYourAccountProps = {
-	onClose: () => void;
+	onCancel: () => void;
+	onSignIn: () => void;
 };

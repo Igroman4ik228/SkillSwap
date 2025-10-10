@@ -31,6 +31,12 @@ export const MemoryRouteDecorator = () => (Story: ComponentType) => {
 };
 
 export const ModalDecorator = () => (Story: ComponentType) => {
+	if (!document.getElementById('modal')) {
+		const modalRoot = document.createElement('div');
+		modalRoot.id = 'modal';
+		document.body.appendChild(modalRoot);
+	}
+
 	return (
 		<ModalProvider>
 			<Story />

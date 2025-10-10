@@ -1,13 +1,11 @@
-import { Button, Icon, Modal } from '@/shared';
+import { Button, Icon } from '@/shared';
 import Notification from '@/shared/assets/icons/notification.svg?react';
-import type { OfferedExchangeModalProps } from './type';
-import styles from './OfferedExchangeModal.module.scss';
+import styles from './offeredExchange.module.scss';
+import type { OfferedExchangeProps } from './type';
 
-export const OfferedExchangeModal = ({
-	onClose,
-}: OfferedExchangeModalProps) => {
+export const OfferedExchange = ({ onDone }: OfferedExchangeProps) => {
 	return (
-		<Modal onClose={onClose} className={styles.createOfferModal}>
+		<div className={styles.offeredExchange}>
 			<Icon
 				Svg={Notification}
 				width={100}
@@ -18,7 +16,7 @@ export const OfferedExchangeModal = ({
 			<p className={styles.description}>
 				Теперь дождитесь подтверждения. Вам придёт уведомление
 			</p>
-			<Button onClick={onClose}>Готово</Button>
-		</Modal>
+			<Button onClick={onDone}>Готово</Button>
+		</div>
 	);
 };

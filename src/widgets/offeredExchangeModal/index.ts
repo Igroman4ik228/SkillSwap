@@ -1,1 +1,0 @@
-export { OfferedExchangeModal } from './offeredExchangeModal';

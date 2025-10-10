@@ -1,1 +1,1 @@
-export { LoginYourAccount as LoginYourAccountModal } from './loginYourAccount';
+export { LoginYourAccount } from './loginYourAccount';
