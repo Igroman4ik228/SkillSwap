@@ -5,7 +5,7 @@
 	"scripts": {
 		"prepare": "husky",
 		"dev": "vite",
-		"build": "vite build",
+		"build": "tsc -b && vite build",
 		"preview": "vite preview",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
@@ -15,7 +15,7 @@
 		"stylelint:fix": "stylelint src/**/*.{css,scss} --aei --fix",
 		"format": "prettier . --write --ignore-unknown --ignore-path .prettierignore",
 		"tsc": "tsc",
-		"check": "npm run lint:fix && npm run stylelint:fix && npm run format"
+		"check": "npm run tsc && npm run lint:fix && npm run stylelint:fix && npm run format"
 	},
 	"lint-staged": {
 		"src/**/*.{css,scss}": "stylelint --aei --fix",

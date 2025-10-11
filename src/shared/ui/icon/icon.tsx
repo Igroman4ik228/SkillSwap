@@ -21,7 +21,6 @@ export const Icon = ({
 	return (
 		<button
 			className={clsx(cls.button, className)}
-			style={{ height, width }}
 			onClick={onClick}
 			type='button'
 		>
