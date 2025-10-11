@@ -1,5 +1,5 @@
+import type { TUsers } from '@/entities';
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import users from '../../../public/db/users.json';
 import { SuggestionsBlock } from './suggestionsBlock';
 
 const meta: Meta<typeof SuggestionsBlock> = {
@@ -10,6 +10,11 @@ const meta: Meta<typeof SuggestionsBlock> = {
 
 export default meta;
 type Story = StoryObj<typeof SuggestionsBlock>;
+
+const response = await fetch('/db/users.json');
+const usersData = await response.json();
+
+const users = usersData as TUsers[];
 
 export const Default: Story = {
 	args: {

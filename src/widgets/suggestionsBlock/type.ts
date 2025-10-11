@@ -1,6 +1,6 @@
-import type { TUserCard } from '@/widgets/userCard/model/types';
+import type { TUsers } from '@/entities';
 
 export type SuggestionsBlockProps = {
-	suggestedUsers: TUserCard[];
-	currentUser: TUserCard;
+	suggestedUsers: TUsers[];
+	currentUser: TUsers;
 };
