@@ -1,4 +1,3 @@
-import { StoreDecorator } from '@/shared/utils/decorators';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Header } from './header';
 
@@ -21,8 +20,8 @@ type Story = StoryObj<typeof Header>;
 export const NotAuth: Story = {};
 
 export const Auth: Story = {
-	decorators: [
-		StoreDecorator({
+	parameters: {
+		initialState: {
 			user: {
 				data: {
 					id: '1',
@@ -30,8 +29,8 @@ export const Auth: Story = {
 					avatar: 'images/user-avatar.jpg',
 				},
 			},
-		}),
-	],
+		},
+	},
 };
 
 export const Pure: Story = {

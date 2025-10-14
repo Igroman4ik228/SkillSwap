@@ -4,7 +4,7 @@ import {
 	MemoryRouteDecorator,
 	ModalDecorator,
 	StoreDecorator,
-} from '../src/shared/utils/decorators';
+} from './decorators';
 
 const preview: Preview = {
 	decorators: [StoreDecorator(), MemoryRouteDecorator(), ModalDecorator()],
