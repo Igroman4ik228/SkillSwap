@@ -1,4 +1,4 @@
-import { useModal } from '@/shared/lib';
+import { useModal } from '@/shared';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { LoginYourAccount } from './loginYourAccount';
 
