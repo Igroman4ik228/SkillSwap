@@ -1,19 +1,23 @@
-import { ROUTES } from '@/shared';
+import { Button, Icon, ROUTES } from '@/shared';
+import LogoutIcon from '@/shared/assets/icons/logout.svg?react';
 import { Link } from 'react-router-dom';
-import { LogoutButton } from './logoutButton';
-import styles from './userDropdown.module.scss';
+import cls from './userDropdown.module.scss';
 
 export const UserDropdown = () => {
-	const handleLogout = () => {
+	const handleLogout: () => void = () => {
+		console.log('User logged out');
 		// Logic for logging out the user
 	};
 
 	return (
-		<div className={styles.dropdown}>
-			<Link className={styles.item} to={ROUTES.PROFILE}>
+		<div className={cls.dropdown}>
+			<Link className={cls.link} to={ROUTES.PROFILE}>
 				Личный кабинет
 			</Link>
-			<LogoutButton onLogout={handleLogout} />
+			<Button className={cls.logoutButton} onClick={handleLogout}>
+				Выйти из аккаунта
+				<Icon Svg={LogoutIcon} />
+			</Button>
 		</div>
 	);
 };
