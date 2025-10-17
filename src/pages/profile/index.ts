@@ -1,1 +1,3 @@
-export { ProfilePage } from './profile';
+import { ProfilePage } from './profile';
+
+export const Component = ProfilePage;

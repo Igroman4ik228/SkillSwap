@@ -1,14 +1,11 @@
-import { ProfileMenu } from '@/widgets';
-import { Outlet } from 'react-router-dom';
-import styles from './profile.module.scss';
+import { UserProfileForm } from '@/entities/user/ui/userProfileForm/userProfileForm';
+import { ChangeAvatarForm } from '@/features';
 
 export const ProfilePage = () => {
 	return (
-		<div className={styles.profilePage}>
-			<ProfileMenu />
-			<div className={styles.main}>
-				<Outlet />
-			</div>
-		</div>
+		<>
+			<UserProfileForm />
+			<ChangeAvatarForm />
+		</>
 	);
 };

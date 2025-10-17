@@ -14,92 +14,76 @@
 
 /* Links */
 
-a,
-a:link,
-a:visited,
-a:hover {
+:where(a, a:link, a:visited, a:hover) {
 	color: inherit;
 	font: inherit;
 	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 /* Common */
 
-aside,
-nav,
-footer,
-header,
-section,
-main {
+:where(aside, nav, footer, header, section, main) {
 	display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+:where(h1, h2, h3, h4, h5, h6, p) {
 	font: inherit;
 }
 
-ul,
-ul li {
+:where(ul, ul li) {
 	list-style: none;
 }
 
-img {
+:where(img) {
 	vertical-align: top;
 }
 
-img,
-svg,
-picture {
+:where(img, svg, picture) {
 	max-width: 100%;
 	height: auto;
 }
 
-svg * {
+:where(svg *) {
 	transition-property: fill, stroke;
 }
 
-address {
+:where(address) {
 	font-style: normal;
 }
 
-table {
+:where(table) {
 	border-color: currentcolor;
 	border-collapse: collapse;
 }
 
 /* Form */
 
-input,
-textarea,
-button,
-select {
+:where(textarea, input[type='file']) {
+	max-width: 100%;
+}
+
+:where(label) {
+	cursor: pointer;
+}
+
+:where(legend) {
+	display: block;
+}
+
+:where(input, textarea, button, select) {
 	color: inherit;
 	font: inherit;
 	background-color: transparent;
 }
 
-input::-ms-clear {
-	display: none;
-}
-
-button {
+:where(button) {
 	display: inline-block;
 	background: none;
 	background-color: transparent;
 	box-shadow: none;
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
-}
-
-textarea,
-input[type='file'] {
-	max-width: 100%;
 }
 
 input:focus,
@@ -109,17 +93,13 @@ button:active {
 	outline: none;
 }
 
+input::-ms-clear {
+	display: none;
+}
+
 button::-moz-focus-inner {
 	padding: 0;
 	border: 0;
-}
-
-label {
-	cursor: pointer;
-}
-
-legend {
-	display: block;
 }
 
 /* Disable animation */

@@ -3,37 +3,37 @@
 	flex-direction: column;
 	gap: 16px;
 	width: 100%;
+}
 
-	.link {
-		color: $color-pressed;
-	}
+.link {
+	color: $color-pressed;
+}
 
-	.row {
-		display: flex;
-		flex-direction: row;
-		gap: 24px;
-		width: 100%;
-	}
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	width: 100%;
+}
 
-	.title {
-		margin-bottom: 4px;
-	}
+.title {
+	margin-bottom: 4px;
+}
 
-	.bornDate,
-	.gender {
-		flex: 1;
-	}
+.bornDate,
+.gender {
+	flex: 1;
+}
 
-	.select {
-		width: 100%;
-		padding: 12px 20px;
-		background-color: #ffffff;
-		border: 1px solid $color-black;
-		border-radius: 12px;
-		outline: none;
-	}
+.select {
+	width: 100%;
+	padding: 12px 20px;
+	background-color: #ffffff;
+	border: 1px solid $color-black;
+	border-radius: 12px;
+	outline: none;
+}
 
-	.textarea {
-		min-height: 100px;
-	}
+.textarea {
+	min-height: 100px;
 }

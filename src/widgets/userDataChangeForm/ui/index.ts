@@ -1,1 +1,0 @@
-export { UserDataChangeForm } from './userDataChangeForm';

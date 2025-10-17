@@ -1,93 +1,46 @@
-import { Preloader, ROUTES } from '@/shared';
+import { checkUserAuth } from '@/entities';
+import { Preloader } from '@/shared';
 import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import { App } from '../app';
+import { MainLayout } from '../layouts';
+import { store } from '../store';
 import { ProtectedRoute } from './protectedRoute/protectedRoute';
+import { AuthorizedRoutes, PublicRoutes, UnAuthorizedRoutes } from './routes';
 
 const ServerErrorPage = lazy(() => import('@/pages/serverError'));
 
 export const router = createBrowserRouter([
 	{
-		element: <App />,
+		element: <MainLayout />,
+
+		loader: async () => {
+			store.dispatch(checkUserAuth());
+		},
+
 		// Глобальные ошибки, НЕ роута (500)
 		errorElement: (
-			<App>
+			<MainLayout>
 				<ServerErrorPage />
-			</App>
+			</MainLayout>
 		),
+
 		hydrateFallbackElement: <Preloader />,
+
 		children: [
 			// Публичные пути, для всех
-			{
-				path: ROUTES.SKILLS,
-				// Загружаем только, если она открыта
-				lazy: () => import('@/pages/skills'),
-			},
-			{
-				path: ROUTES.SKILL,
-				lazy: () => import('@/pages/skill'),
-			},
+			...PublicRoutes,
 
-			// Защищённые пути, только для авторизованных
+			// Защищённые пути
+			// Только для авторизованных
 			{
 				element: <ProtectedRoute authRequired />,
-				children: [
-					{
-						path: ROUTES.PROFILE,
-						lazy: async () => {
-							const module = await import('@/pages/profile');
-							return { Component: module.ProfilePage };
-						},
-						children: [
-							{
-								path: '',
-								lazy: async () => {
-									const module = await import('@/widgets/userDataChangeForm');
-									return { Component: module.UserDataChangeForm };
-								},
-							},
-							{
-								path: ROUTES.PROFILE_SKILLS,
-								lazy: async () => {
-									return { Component: () => <div>SKILLS</div> };
-								},
-							},
-							{
-								path: ROUTES.PROFILE_FAVORITES,
-								lazy: async () => {
-									return { Component: () => <div>FAVORITES</div> };
-								},
-							},
-							{
-								path: ROUTES.PROFILE_EXCHANGE,
-								lazy: async () => {
-									return { Component: () => <div>EXCHANGE</div> };
-								},
-							},
-							{
-								path: ROUTES.PROFILE_APPLICATIONS,
-								lazy: async () => {
-									return { Component: () => <div>APPLICATIONS</div> };
-								},
-							},
-						],
-					},
-				],
+				children: [...AuthorizedRoutes],
 			},
 
-			// Защищённые пути, только для НЕавторизованных
+			// Только для НЕавторизованных
 			{
 				element: <ProtectedRoute />,
-				children: [
-					{
-						path: ROUTES.LOGIN,
-						lazy: () => import('@/pages/login'),
-					},
-					{
-						path: ROUTES.REGISTER,
-						lazy: () => import('@/pages/register'),
-					},
-				],
+				children: [...UnAuthorizedRoutes],
 			},
 
 			// Ошибки роута (404)
