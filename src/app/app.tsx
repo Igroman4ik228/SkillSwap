@@ -1,23 +1,23 @@
+import '@/app/styles/index.scss';
 import { checkUserAuth } from '@/entities';
-import { useHeaderAppearance, useTypedDispatch } from '@/shared';
-import { Footer, Header } from '@/widgets';
-import { useEffect, type ReactNode } from 'react';
-import { Outlet } from 'react-router-dom';
-import cls from './app.module.scss';
+import { ModalProvider } from '@/shared';
+import { useEffect } from 'react';
+import { Provider } from 'react-redux';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './router';
+import { store } from './store';
 
-export const App = ({ children }: { children?: ReactNode }) => {
-	const dispatch = useTypedDispatch();
-	const headerAppearance = useHeaderAppearance();
-
+export const App = () => {
+	// Load initial  data
 	useEffect(() => {
-		dispatch(checkUserAuth());
-	}, [dispatch]);
+		store.dispatch(checkUserAuth());
+	}, []);
 
 	return (
-		<div className={cls.stickyFooter}>
-			<Header appearance={headerAppearance} />
-			<main>{children ?? <Outlet />}</main>
-			<Footer className={cls.footer} />
-		</div>
+		<Provider store={store}>
+			<ModalProvider>
+				<RouterProvider router={router} />
+			</ModalProvider>
+		</Provider>
 	);
 };

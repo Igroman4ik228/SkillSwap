@@ -94,9 +94,11 @@ export const UserProfileForm = () => {
 					onClick: () => emailRef.current?.focus(),
 				}}
 			/>
-			<NavLink to='/change-password' className={styles.link}>
+
+			<NavLink to='/' className={styles.link}>
 				Изменить пароль
 			</NavLink>
+
 			<Input
 				title='Имя'
 				{...register('name')}

@@ -9,5 +9,4 @@ export * from './profileMenu';
 export * from './suggestionsBlock';
 export * from './userCard';
 export * from './userCards';
-export * from './userDataChangeForm';
 export * from './usersSection';
