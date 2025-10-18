@@ -10,6 +10,7 @@
 	min-width: 260px;
 	margin-top: 20px;
 	padding: 40px;
+	color: $color-text;
 	color: $color-icon;
 	font-weight: 500;
 	font-size: $font-size-h4;
@@ -18,4 +19,20 @@
 	background: $color-white;
 	border: 1px solid $color-toggle;
 	border-radius: 12px;
+}
+
+.logoutButton {
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+}
+
+.link:hover,
+.logoutButton:hover {
+	color: $color-accent;
+	background-color: transparent;
+	cursor: pointer;
 }

@@ -9,13 +9,21 @@ const meta: Meta<typeof UserDropdown> = {
 		(Story) => (
 			<div
 				style={{
-					position: 'relative',
-					width: '50vh',
 					height: '50vh',
-					margin: '0 auto',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					border: '1px solid #ccc',
 				}}
 			>
-				<Story />
+				<div
+					style={{
+						width: '100%',
+						position: 'relative',
+					}}
+				>
+					<Story />
+				</div>
 			</div>
 		),
 	],
