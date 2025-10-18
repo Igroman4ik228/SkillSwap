@@ -46,7 +46,7 @@ export const Header = ({ appearance = 'primary', className }: HeaderProps) => {
 				<NavMenu />
 				<SearchInput />
 
-				<AdditionalButtons isAuth={Boolean(user)} />
+				<AdditionalButtons isAuth={!!user} />
 
 				<AuthBlock user={user} />
 			</div>

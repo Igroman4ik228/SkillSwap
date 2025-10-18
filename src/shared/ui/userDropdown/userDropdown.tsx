@@ -1,7 +1,7 @@
 import { ROUTES } from '@/shared';
 import { Link } from 'react-router-dom';
 import { LogoutButton } from './logoutButton';
-import styles from './userDropdown.module.scss';
+import cls from './userDropdown.module.scss';
 
 export const UserDropdown = () => {
 	const handleLogout = () => {
@@ -9,8 +9,8 @@ export const UserDropdown = () => {
 	};
 
 	return (
-		<div className={styles.dropdown}>
-			<Link className={styles.item} to={ROUTES.PROFILE}>
+		<div className={cls.dropdown}>
+			<Link className={cls.item} to={ROUTES.PROFILE}>
 				Личный кабинет
 			</Link>
 			<LogoutButton onLogout={handleLogout} />

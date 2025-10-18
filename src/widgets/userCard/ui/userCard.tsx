@@ -6,7 +6,7 @@ import { generatePath } from 'react-router-dom';
 import { formatAge } from '../lib/formatAge';
 import { SkillList } from './skillList';
 import type { UserCardProps } from './type';
-import styles from './userCard.module.scss';
+import cls from './userCard.module.scss';
 
 export const UserCard = ({
 	userCardData,
@@ -45,35 +45,35 @@ export const UserCard = ({
 	};
 
 	return (
-		<div className={styles.card}>
-			<div className={styles.preview}>
-				<div className={styles.avatar}>
+		<div className={cls.card}>
+			<div className={cls.preview}>
+				<div className={cls.avatar}>
 					<img src={avatar} alt='Фото профиля' />
 				</div>
 
-				<div className={styles.user}>
-					<h3 className={styles.userName}>{name}</h3>
-					<p className={styles.userInfo}>
+				<div className={cls.user}>
+					<h3 className={cls.userName}>{name}</h3>
+					<p className={cls.userInfo}>
 						{city}, {formattedAge}
 					</p>
 				</div>
 
 				<Icon
 					Svg={isFavorite ? LikeActiveIcon : LikeIcon}
-					className={styles.likeButton}
+					className={cls.likeButton}
 					onClick={handleLikeClick}
 				/>
 			</div>
 
-			{showDescription && <p className={styles.description}>{description}</p>}
+			{showDescription && <p className={cls.description}>{description}</p>}
 
-			<div className={styles.skills}>
-				<section className={styles.section}>
-					<h4 className={styles.title}>Может научить:</h4>
+			<div className={cls.skills}>
+				<section className={cls.section}>
+					<h4 className={cls.title}>Может научить:</h4>
 					<SkillList items={[teach]} />
 				</section>
-				<section className={styles.section}>
-					<h4 className={styles.title}>Хочет научиться:</h4>
+				<section className={cls.section}>
+					<h4 className={cls.title}>Хочет научиться:</h4>
 					<SkillList items={learn} />
 				</section>
 			</div>

@@ -1,13 +1,13 @@
-import { Preloader, ROUTES } from '@/shared';
+import { userSelectors } from '@/entities';
+import { Preloader, ROUTES, useTypedSelector } from '@/shared';
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 import type { ProtectedRouteProps } from './type';
 
 export const ProtectedRoute = ({ authRequired }: ProtectedRouteProps) => {
 	const location = useLocation();
 
-	// TODO: Получение данных
-	const isAuthChecked = true;
-	const user = { name: '' };
+	const isAuthChecked = useTypedSelector(userSelectors.isAuthChecked);
+	const user = useTypedSelector(userSelectors.data);
 
 	// Пока идёт чекаут пользователя, показываем прелоадер
 	if (!isAuthChecked) return <Preloader />;

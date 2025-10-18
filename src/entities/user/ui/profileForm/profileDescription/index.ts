@@ -1,0 +1,1 @@
+export { ProfileDescription } from './profileDescription';

@@ -1,7 +1,7 @@
-import LikeIcon from '@/shared/assets/icons/like.svg?react';
 import LikeActiveIcon from '@/shared/assets/icons/like-active.svg?react';
-import ShareIcon from '@/shared/assets/icons/share.svg?react';
+import LikeIcon from '@/shared/assets/icons/like.svg?react';
 import MoreIcon from '@/shared/assets/icons/more-square.svg?react';
+import ShareIcon from '@/shared/assets/icons/share.svg?react';
 
 import { Icon } from '@/shared/ui/icon';
 
@@ -13,7 +13,7 @@ import drums1 from '@/shared/assets/images/drums_1.jpg';
 import drums2 from '@/shared/assets/images/drums_2.jpg';
 import drumsOverlay from '@/shared/assets/images/drums_overlay.jpg';
 import { useState } from 'react';
-import styles from './skillDetailCard.module.scss';
+import cls from './skillDetailCard.module.scss';
 
 export const SkillDetailCard = () => {
 	const [isLiked, setIsLiked] = useState(false);
@@ -40,34 +40,34 @@ export const SkillDetailCard = () => {
 	};
 
 	return (
-		<div className={styles.card}>
-			<div className={styles.header}>
+		<div className={cls.card}>
+			<div className={cls.header}>
 				<Icon Svg={isLiked ? LikeActiveIcon : LikeIcon} onClick={handleLike} />
 				<Icon Svg={ShareIcon} onClick={() => console.log('Share clicked')} />
 				<Icon Svg={MoreIcon} onClick={() => console.log('More clicked')} />
 			</div>
-			<div className={styles.content}>
-				<div className={styles.contentInfo}>
-					<h1 className={styles.title}>{mockSkill.title}</h1>
-					<span className={styles.category}>{mockSkill.category}</span>
-					<p className={styles.description}>{mockSkill.description}</p>
-					<Button className={styles.button}>Предложить обмен</Button>
+			<div className={cls.content}>
+				<div className={cls.contentInfo}>
+					<h1 className={cls.title}>{mockSkill.title}</h1>
+					<span className={cls.category}>{mockSkill.category}</span>
+					<p className={cls.description}>{mockSkill.description}</p>
+					<Button className={cls.button}>Предложить обмен</Button>
 				</div>
-				<div className={styles.contentGalery}>
+				<div className={cls.contentGalery}>
 					<div>
 						<img
 							src={mainImage}
 							alt='Основное изображение'
-							className={styles.mainImage}
+							className={cls.mainImage}
 						/>
 					</div>
-					<div className={styles.sideImages}>
+					<div className={cls.sideImages}>
 						{mockImages.slice(1, 4).map(({ id, src }) => (
 							<img
 								key={id}
 								src={src}
 								alt={`Превью ${id + 1}`}
-								className={styles.sideImage}
+								className={cls.sideImage}
 							/>
 						))}
 					</div>

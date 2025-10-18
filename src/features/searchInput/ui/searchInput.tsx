@@ -1,7 +1,7 @@
 import { Input } from '@/shared';
 import ClearIcon from '@/shared/assets/icons/cross.svg?react';
 import React, { useState } from 'react';
-import styles from './searchInput.module.scss';
+import cls from './searchInput.module.scss';
 
 export const SearchInput = () => {
 	const [searchValue, setSearchValue] = useState('');
@@ -15,7 +15,7 @@ export const SearchInput = () => {
 	};
 
 	return (
-		<div className={styles.searchContainer}>
+		<div className={cls.searchContainer}>
 			<Input
 				type='SkillSearch'
 				placeholder='Искать навык'
@@ -30,7 +30,7 @@ export const SearchInput = () => {
 							}
 						: undefined
 				}
-				className={styles.searchInput}
+				className={cls.searchInput}
 			/>
 		</div>
 	);

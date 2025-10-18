@@ -1,4 +1,4 @@
-import styles from './radioFilter.module.scss';
+import cls from './radioFilter.module.scss';
 
 interface RadioFilterProps {
 	title?: string;
@@ -16,13 +16,13 @@ export const RadioFilter = ({
 	onChange,
 }: RadioFilterProps) => {
 	return (
-		<div className={styles.container}>
-			{title && <h3 className={styles.title}>{title}</h3>}
-			<div className={styles.options}>
+		<div className={cls.container}>
+			{title && <h3 className={cls.title}>{title}</h3>}
+			<div className={cls.options}>
 				{options.map(({ label }, index) => {
 					const inputId = `${name}-${index}`;
 					return (
-						<label key={inputId} htmlFor={inputId} className={styles.label}>
+						<label key={inputId} htmlFor={inputId} className={cls.label}>
 							<input
 								type='radio'
 								id={inputId}
@@ -30,10 +30,10 @@ export const RadioFilter = ({
 								value={label}
 								checked={selectedValue === label}
 								onChange={() => onChange(label)}
-								className={styles.input}
+								className={cls.input}
 							/>
-							<span className={styles.radioIndicator} />
-							<span className={styles.labelText}>{label}</span>
+							<span className={cls.radioIndicator} />
+							<span className={cls.labelText}>{label}</span>
 						</label>
 					);
 				})}

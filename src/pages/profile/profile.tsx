@@ -1,11 +1,5 @@
-import { UserProfileForm } from '@/entities/user/ui/userProfileForm/userProfileForm';
-import { ChangeAvatarForm } from '@/features';
+import { ProfileForm } from '@/entities';
 
 export const ProfilePage = () => {
-	return (
-		<>
-			<UserProfileForm />
-			<ChangeAvatarForm />
-		</>
-	);
+	return <ProfileForm />;
 };

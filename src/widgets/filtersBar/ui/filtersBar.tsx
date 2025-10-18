@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 import { CheckboxFilter } from './checkbox';
-import styles from './filtersBar.module.scss';
+import cls from './filtersBar.module.scss';
 import { cities, skills } from './mockData';
 import { RadioFilter } from './radio';
 
@@ -46,10 +46,10 @@ export const FiltersBar = () => {
 	};
 
 	return (
-		<div className={styles.container}>
-			<h2 className={styles.title}>Фильтры</h2>
+		<div className={cls.container}>
+			<h2 className={cls.title}>Фильтры</h2>
 
-			<section className={styles.section}>
+			<section className={cls.section}>
 				<RadioFilter
 					options={[
 						{ label: 'Все' },
@@ -61,13 +61,13 @@ export const FiltersBar = () => {
 				/>
 			</section>
 
-			<section className={styles.section}>
-				<h3 className={styles.groupTitle}>Навыки</h3>
+			<section className={cls.section}>
+				<h3 className={cls.groupTitle}>Навыки</h3>
 
 				{(showAllSkills ? skills : skills.slice(0, 6)).map((category) => (
-					<div key={category.label} className={styles.skillCategory}>
+					<div key={category.label} className={cls.skillCategory}>
 						<div
-							className={styles.skillCategoryHeader}
+							className={cls.skillCategoryHeader}
 							onClick={() => toggleSkillCategory(category.label)}
 							role='button'
 							tabIndex={0}
@@ -84,15 +84,15 @@ export const FiltersBar = () => {
 								isSubcategory
 							/>
 							<span
-								className={clsx(styles.expandButton, {
-									[styles.expanded]: expandedSkills[category.label],
+								className={clsx(cls.expandButton, {
+									[cls.expanded]: expandedSkills[category.label],
 								})}
 								aria-hidden='true'
 							/>
 						</div>
 
 						{expandedSkills[category.label] && category.subcategories && (
-							<div className={styles.subcategories}>
+							<div className={cls.subcategories}>
 								<CheckboxFilter
 									options={category.subcategories.map((label) => ({ label }))}
 									checkedValues={checkedSkills}
@@ -105,20 +105,20 @@ export const FiltersBar = () => {
 
 				<button
 					type='button'
-					className={styles.toggleButton}
+					className={cls.toggleButton}
 					onClick={() => setShowAllSkills(!showAllSkills)}
 				>
 					Все категории
 					<span
-						className={clsx(styles.expandIcon, {
-							[styles.expanded]: showAllSkills,
+						className={clsx(cls.expandIcon, {
+							[cls.expanded]: showAllSkills,
 						})}
 					/>
 				</button>
 			</section>
 
-			<section className={styles.section}>
-				<h3 className={styles.groupTitle}>Пол автора</h3>
+			<section className={cls.section}>
+				<h3 className={cls.groupTitle}>Пол автора</h3>
 				<RadioFilter
 					name='authorGender'
 					options={[
@@ -131,8 +131,8 @@ export const FiltersBar = () => {
 				/>
 			</section>
 
-			<section className={styles.section}>
-				<h3 className={styles.groupTitle}>Город</h3>
+			<section className={cls.section}>
+				<h3 className={cls.groupTitle}>Город</h3>
 				<CheckboxFilter
 					options={showAllCities ? cities : cities.slice(0, 5)}
 					checkedValues={checkedCities}
@@ -140,13 +140,13 @@ export const FiltersBar = () => {
 				/>
 				<button
 					type='button'
-					className={styles.toggleButton}
+					className={cls.toggleButton}
 					onClick={() => setShowAllCities(!showAllCities)}
 				>
 					Все города
 					<span
-						className={clsx(styles.expandIcon, {
-							[styles.expanded]: showAllCities,
+						className={clsx(cls.expandIcon, {
+							[cls.expanded]: showAllCities,
 						})}
 					/>
 				</button>
