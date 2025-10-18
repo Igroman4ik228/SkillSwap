@@ -5,6 +5,8 @@ import { useEffect, useRef, useState, type ChangeEvent } from 'react';
 import { useController, useFormContext } from 'react-hook-form';
 import cls from './profileAvatar.module.scss';
 
+// TODO: Сделать рабочий функционал отправки изображения на сервер
+
 function isFile(value: unknown): value is File {
 	return (
 		typeof value === 'object' &&
