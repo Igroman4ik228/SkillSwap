@@ -8,16 +8,17 @@ export const ProtectedRoute = ({ authRequired }: ProtectedRouteProps) => {
 
 	const isAuthChecked = useTypedSelector(userSelectors.isAuthChecked);
 	const user = useTypedSelector(userSelectors.data);
+	const isExistUser = !!user;
 
 	// Пока идёт чекаут пользователя, показываем прелоадер
 	if (!isAuthChecked) return <Preloader />;
 
 	// Если маршрут для авторизованного пользователя, но пользователь неавторизован, то делаем редирект
-	if (authRequired && !user)
+	if (authRequired && !isExistUser)
 		return <Navigate replace to={ROUTES.LOGIN} state={{ from: location }} />; // в поле from объекта location.state записываем информацию о URL
 
 	// Если маршрут для неавторизованного пользователя, но пользователь авторизован
-	if (!authRequired && user)
+	if (!authRequired && isExistUser)
 		// при обратном редиректе получаем данные о месте назначения редиректа из объекта location.state
 		// в случае если объекта location.state?.from нет — а такое может быть, если мы зашли на страницу логина по прямому URL
 		// мы сами создаём объект c указанием адреса и делаем переадресацию на главную страницу
