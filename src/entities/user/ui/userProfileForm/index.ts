@@ -1,1 +1,0 @@
-export { UserProfileForm } from './userProfileForm';

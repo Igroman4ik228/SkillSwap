@@ -1,19 +1,22 @@
 .header {
-	padding-top: 36px;
+	padding-top: 40px;
+}
 
-	.container {
+.container {
+	@include container;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+
+	&_pure {
 		@include container;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		gap: 32px;
-
-		&_pure {
-			justify-content: space-between;
-		}
 	}
+}
 
-	.search {
-		flex: 1;
-	}
+.search {
+	flex: 1;
 }

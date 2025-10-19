@@ -1,11 +1,11 @@
 import { ProfileMenu } from '@/widgets';
 import { Outlet } from 'react-router-dom';
-import styles from './profileLayout.module.scss';
+import cls from './profileLayout.module.scss';
 
 export const ProfileLayout = () => (
-	<div className={styles.profilePage}>
+	<div className={cls.profilePage}>
 		<ProfileMenu />
-		<div className={styles.main}>
+		<div className={cls.content}>
 			<Outlet />
 		</div>
 	</div>

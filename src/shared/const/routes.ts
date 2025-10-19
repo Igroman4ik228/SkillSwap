@@ -11,6 +11,8 @@ export const ROUTES = {
 	SKILL_SUCCESS: '/skills/success',
 } as const;
 
+export const pureHeaderPaths: string[] = [ROUTES.LOGIN, ROUTES.REGISTER];
+
 export type PathParams = {
 	[ROUTES.SKILL]: {
 		skillId?: string;

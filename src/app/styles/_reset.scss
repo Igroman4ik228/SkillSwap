@@ -89,7 +89,8 @@
 input:focus,
 input:active,
 button:focus,
-button:active {
+button:active,
+textarea:focus {
 	outline: none;
 }
 

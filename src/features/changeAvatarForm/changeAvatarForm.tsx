@@ -3,7 +3,7 @@ import { Icon } from '@/shared';
 import GalleryEdit from '@/shared/assets/icons/gallery-edit.svg?react';
 import { useTypedDispatch, useTypedSelector } from '@/shared/hooks/store';
 import { useRef } from 'react';
-import styles from './changeAvatar.module.scss';
+import cls from './changeAvatar.module.scss';
 
 export const ChangeAvatarForm = () => {
 	const inputRef = useRef<HTMLInputElement>(null);
@@ -22,16 +22,16 @@ export const ChangeAvatarForm = () => {
 	};
 
 	return (
-		<div className={styles.avatarWrapper}>
-			<div className={styles.avatarBackground}>
-				<img src={avatarUrl} alt='Аватар' className={styles.avatar} />
+		<div className={cls.avatarWrapper}>
+			<div className={cls.avatarBackground}>
+				<img src={avatarUrl} alt='Аватар' className={cls.avatar} />
 			</div>
 
-			<div className={styles.wrapperBtn}>
+			<div className={cls.wrapperBtn}>
 				<Icon
 					Svg={GalleryEdit}
 					onClick={handleIconClick}
-					className={styles.editBtn}
+					className={cls.editBtn}
 				/>
 				<input
 					ref={inputRef}

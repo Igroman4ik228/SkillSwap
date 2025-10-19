@@ -1,10 +1,10 @@
-import { Icon } from '@/shared/ui/icon';
-import Idea from '@/shared/assets/icons/idea.svg?react';
 import Cross from '@/shared/assets/icons/cross.svg?react';
+import Idea from '@/shared/assets/icons/idea.svg?react';
 import { Button } from '@/shared/ui/button';
+import { Icon } from '@/shared/ui/icon';
 import clsx from 'clsx';
+import cls from './notification.module.scss';
 import type { NotificationProps } from './type';
-import styles from './notification.module.scss';
 
 export const Notification = ({
 	appearance = 'main',
@@ -38,18 +38,18 @@ export const Notification = ({
 
 	if (appearance === 'inProfilePopup') {
 		return (
-			<div className={styles.notificationPopup}>
-				<div className={clsx(styles.infoWrapper)}>
-					<Icon Svg={Idea} height={40} width={40} className={styles.icon} />
+			<div className={cls.notificationPopup}>
+				<div className={clsx(cls.infoWrapper)}>
+					<Icon Svg={Idea} height={40} width={40} className={cls.icon} />
 					<div>
-						<h4 className={styles.popupTitle}>{title}</h4>
-						<p className={styles.description}>{description}</p>
+						<h4 className={cls.popupTitle}>{title}</h4>
+						<p className={cls.description}>{description}</p>
 					</div>
-					<div className={styles.date}>{date}</div>
+					<div className={cls.date}>{date}</div>
 				</div>
 				{!isChecked && (
 					<Button
-						className={styles.popupButton}
+						className={cls.popupButton}
 						appearance='primary'
 						fullWidth={false}
 					>
@@ -61,20 +61,20 @@ export const Notification = ({
 	}
 
 	return (
-		<div className={clsx(styles.notificationMain)}>
+		<div className={clsx(cls.notificationMain)}>
 			<Icon Svg={Idea} height={20} width={20} />
 			<div>
-				<h3 className={styles.mainTitle}>{title}</h3>
+				<h3 className={cls.mainTitle}>{title}</h3>
 			</div>
 			<Icon
 				Svg={Cross}
-				className={styles.cross}
+				className={cls.cross}
 				onClick={() => {}}
 				height={24}
 				width={24}
 			/>
 			<Button
-				className={styles.mainButton}
+				className={cls.mainButton}
 				appearance='tertiary'
 				fullWidth={false}
 			>

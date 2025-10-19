@@ -1,7 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { ROUTES } from '../const';
-
-const pureHeaderPaths: string[] = [ROUTES.LOGIN, ROUTES.REGISTER];
+import { pureHeaderPaths } from '../const/routes';
 
 export function useHeaderAppearance(): 'pure' | 'primary' {
 	const location = useLocation();

@@ -3,7 +3,7 @@ import { Icon } from '@/shared/ui/icon';
 import { useState } from 'react';
 import { UserCard } from '../userCard';
 import { transformUserToUserCard } from '../userCards/lib';
-import styles from './suggestionsBlock.module.scss';
+import cls from './suggestionsBlock.module.scss';
 import type { SuggestionsBlockProps } from './type';
 
 const MAX_CARDS = 4;
@@ -22,22 +22,22 @@ export const SuggestionsBlock = ({
 	const pagesCount = Math.ceil(filteredSuggestedUsers.length / MAX_CARDS);
 
 	return (
-		<div className={styles.container}>
-			<h2 className={styles.title}>Похожие предложения</h2>
-			<div className={styles.usersList}>
+		<div className={cls.container}>
+			<h2 className={cls.title}>Похожие предложения</h2>
+			<div className={cls.usersList}>
 				{slide !== 0 && (
 					<Icon
 						Svg={ChevronRightIcon}
 						onClick={() => {
 							setSlide((prev) => prev - 1);
 						}}
-						className={styles.leftButton}
+						className={cls.leftButton}
 						width='16px'
 						height='16px'
 					/>
 				)}
 
-				<ul className={styles.list}>
+				<ul className={cls.list}>
 					{filteredSuggestedUsers
 						.slice(
 							slide * MAX_CARDS,
@@ -58,7 +58,7 @@ export const SuggestionsBlock = ({
 						onClick={() => {
 							setSlide((prev) => prev + 1);
 						}}
-						className={styles.rightButton}
+						className={cls.rightButton}
 						width='16px'
 						height='16px'
 					/>

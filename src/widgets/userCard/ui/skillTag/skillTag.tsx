@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import styles from './skillTag.module.scss';
+import cls from './skillTag.module.scss';
 import type { SkillTagProps } from './type';
 
 export const SkillTag = ({
@@ -9,7 +9,7 @@ export const SkillTag = ({
 	...props
 }: SkillTagProps) => (
 	<div
-		className={clsx(styles.skill, styles[`skill_${appearance}`], className)}
+		className={clsx(cls.skill, cls[`skill_${appearance}`], className)}
 		{...props}
 	>
 		{text}

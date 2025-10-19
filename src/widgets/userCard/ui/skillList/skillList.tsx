@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { SkillTag } from '../skillTag';
-import styles from './skillList.module.scss';
+import cls from './skillList.module.scss';
 import type { SkillListProps } from './type';
 
 const SkillItem = ({
@@ -74,7 +74,7 @@ export const SkillList = ({ items }: SkillListProps) => {
 	const hiddenCount = items.length - visibleItems.length;
 
 	return (
-		<ul className={styles.skillList} ref={listRef}>
+		<ul className={cls.skillList} ref={listRef}>
 			{visibleItems.map((text) => (
 				<SkillItem key={text} text={text} root={root} onHide={handleItemHide} />
 			))}
