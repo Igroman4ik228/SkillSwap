@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { PageErrorBase } from './pageErrorBase';
+import { ErrorPage } from './errorPage';
 
-const meta: Meta<typeof PageErrorBase> = {
+const meta: Meta<typeof ErrorPage> = {
 	title: 'Pages/PageError',
-	component: PageErrorBase,
+	component: ErrorPage,
 	tags: ['autodocs'],
 };
 
 export default meta;
-type Story = StoryObj<typeof PageErrorBase>;
+type Story = StoryObj<typeof ErrorPage>;
 
 export const Error404: Story = {
 	args: {

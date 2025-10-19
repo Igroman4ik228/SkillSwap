@@ -5,7 +5,7 @@ import { MainLayout } from '../layouts';
 import { ProtectedRoute } from './protectedRoute/protectedRoute';
 import { AuthorizedRoutes, PublicRoutes, UnAuthorizedRoutes } from './routes';
 
-const ServerErrorPage = lazy(() => import('@/pages/serverError'));
+const ErrorPage = lazy(() => import('@/pages/errorPage'));
 
 export const router = createBrowserRouter([
 	{
@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
 		// Глобальные ошибки, НЕ роута (500)
 		errorElement: (
 			<MainLayout>
-				<ServerErrorPage />
+				<ErrorPage statusCode={500} />
 			</MainLayout>
 		),
 
@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
 			// Ошибки роута (404)
 			{
 				path: '*',
-				lazy: () => import('@/pages/notFound'),
+				element: <ErrorPage />,
 			},
 		],
 	},
