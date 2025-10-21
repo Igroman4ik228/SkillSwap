@@ -1,0 +1,66 @@
+.loginPage {
+	display: flex;
+	gap: 24px;
+}
+
+.wrapperLogin {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 60px;
+	background-color: white;
+	border-radius: 12px;
+}
+
+.loginVariants {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	text-align: center;
+}
+
+.external {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.fields {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.wrapperBtn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.registerLink {
+	color: $color-pressed;
+}
+
+.wrapperWelcome {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 60px;
+	background-color: white;
+	border-radius: 12px;
+}
+
+.welcomeTitle {
+	color: $color-text;
+	font-weight: 600;
+	font-size: $font-size-h2;
+	font-family: $font-title;
+	line-height: $line-height-h2;
+}
+
+.welcomeContent {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
