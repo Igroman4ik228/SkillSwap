@@ -1,12 +1,15 @@
 .loginPage {
 	display: flex;
 	gap: 24px;
+	min-height: 692px;
 }
 
 .wrapperLogin {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	gap: 32px;
+	width: 556px;
 	padding: 60px;
 	background-color: white;
 	border-radius: 12px;
@@ -23,6 +26,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+}
+
+.externalBtn {
+	display: flex;
+	gap: 12px;
 }
 
 .fields {
@@ -45,7 +53,9 @@
 .wrapperWelcome {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	gap: 70px;
 	padding: 60px;
 	background-color: white;
 	border-radius: 12px;
@@ -62,5 +72,6 @@
 .welcomeContent {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 12px;
 }
