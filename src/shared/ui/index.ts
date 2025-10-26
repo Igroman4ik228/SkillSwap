@@ -6,3 +6,5 @@ export * from './modal';
 export * from './passwordInput';
 export * from './preloader';
 export * from './textarea';
+export * from './backing';
+export * from './welcome';

@@ -49,29 +49,3 @@
 .registerLink {
 	color: $color-pressed;
 }
-
-.wrapperWelcome {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 70px;
-	padding: 60px;
-	background-color: white;
-	border-radius: 12px;
-}
-
-.welcomeTitle {
-	color: $color-text;
-	font-weight: 600;
-	font-size: $font-size-h2;
-	font-family: $font-title;
-	line-height: $line-height-h2;
-}
-
-.welcomeContent {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 12px;
-}

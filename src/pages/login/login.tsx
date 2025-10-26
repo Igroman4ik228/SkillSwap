@@ -1,4 +1,4 @@
-import { Button, Input, PasswordInput, ROUTES } from '@/shared';
+import { Button, Input, PasswordInput, ROUTES, Welcome } from '@/shared';
 import { Link } from 'react-router-dom';
 import LightBulbIcon from '@/shared/assets/icons/light-bulb.svg?react';
 import AppleIcon from '@/shared/assets/icons/apple.svg?react';
@@ -40,16 +40,11 @@ export const LoginPage = () => {
 				</div>
 			</div>
 
-			<div className={cls.wrapperWelcome}>
-				<LightBulbIcon />
-				<div className={cls.welcomeContent}>
-					<h2 className={cls.welcomeTitle}>С возвращением в SkillSwap!</h2>
-
-					<p className={cls.welcomeText}>
-						Обменивайтесь знаниями и навыками с другими людьми
-					</p>
-				</div>
-			</div>
+			<Welcome
+				image={<LightBulbIcon />}
+				title='С возвращением в SkillSwap!'
+				text='Обменивайтесь знаниями и навыками с другими людьми'
+			/>
 		</div>
 	);
 };
