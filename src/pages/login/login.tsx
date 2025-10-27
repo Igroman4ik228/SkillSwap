@@ -1,4 +1,11 @@
-import { Button, Input, PasswordInput, ROUTES, Welcome } from '@/shared';
+import {
+	Backing,
+	Button,
+	Input,
+	PasswordInput,
+	ROUTES,
+	Welcome,
+} from '@/shared';
 import { Link } from 'react-router-dom';
 import LightBulbIcon from '@/shared/assets/icons/light-bulb.svg?react';
 import AppleIcon from '@/shared/assets/icons/apple.svg?react';
@@ -8,7 +15,7 @@ import cls from './login.module.scss';
 export const LoginPage = () => {
 	return (
 		<div className={cls.loginPage}>
-			<div className={cls.wrapperLogin}>
+			<Backing className={cls.wrapperLogin}>
 				<div className={cls.loginVariants}>
 					<div className={cls.external}>
 						<Button appearance='secondary'>
@@ -38,7 +45,7 @@ export const LoginPage = () => {
 						Зарегистрироваться
 					</Link>
 				</div>
-			</div>
+			</Backing>
 
 			<Welcome
 				image={<LightBulbIcon />}
