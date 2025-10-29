@@ -1,8 +1,8 @@
-import type { ProfileFormData } from '@/entities';
 import { Icon } from '@/shared';
 import GalleryEdit from '@/shared/assets/icons/gallery-edit.svg?react';
 import { useEffect, useRef, useState, type ChangeEvent } from 'react';
 import { useController, useFormContext } from 'react-hook-form';
+import type { ProfileFormData } from '@/features/changeProfile/model/validation';
 import cls from './profileAvatar.module.scss';
 
 // TODO: Сделать рабочий функционал отправки изображения на сервер

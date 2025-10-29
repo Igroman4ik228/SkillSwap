@@ -1,9 +1,4 @@
-import type { ProfileFormData } from '@/entities';
-import {
-	profileFormSchema,
-	updateUser,
-	userSelectors,
-} from '@/entities/user/model';
+import { updateUser, userSelectors } from '@/entities';
 import { Button, useTypedDispatch, useTypedSelector } from '@/shared';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { FormProvider, useForm } from 'react-hook-form';
@@ -12,6 +7,10 @@ import { ProfileContactInfo } from './profileContactInfo';
 import { ProfileDescription } from './profileDescription';
 import cls from './profileForm.module.scss';
 import { ProfilePersonalInfo } from './profilePersonalInfo';
+import {
+	profileFormSchema,
+	type ProfileFormData,
+} from '../../model/validation';
 
 export const ProfileForm = () => {
 	const dispatch = useTypedDispatch();
@@ -30,7 +29,7 @@ export const ProfileForm = () => {
 			avatar: user.avatar,
 		},
 		mode: 'onChange',
-		reValidateMode: 'onChange',
+		shouldUseNativeValidation: false,
 	});
 
 	const onSubmit = methods.handleSubmit(async (data: ProfileFormData) => {

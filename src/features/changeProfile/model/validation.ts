@@ -1,4 +1,5 @@
 import { yup } from '@/shared';
+import type { InferType } from 'yup';
 
 export const profileFormSchema = yup.object({
 	email: yup.string().email().required(),
@@ -12,3 +13,5 @@ export const profileFormSchema = yup.object({
 
 	avatar: yup.string().required(),
 });
+
+export type ProfileFormData = InferType<typeof profileFormSchema>;

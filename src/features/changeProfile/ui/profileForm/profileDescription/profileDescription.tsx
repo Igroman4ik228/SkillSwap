@@ -1,8 +1,8 @@
-import type { ProfileFormData } from '@/entities';
 import { Textarea, getErrorMessage } from '@/shared';
 import EditIcon from '@/shared/assets/icons/edit.svg?react';
 import { useRef } from 'react';
 import { useFormContext } from 'react-hook-form';
+import type { ProfileFormData } from '@/features/changeProfile/model/validation';
 import cls from './profileDescription.module.scss';
 
 export const ProfileDescription = () => {
