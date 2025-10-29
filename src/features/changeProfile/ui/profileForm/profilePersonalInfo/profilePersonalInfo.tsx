@@ -1,8 +1,8 @@
-import type { ProfileFormData } from '@/entities';
 import { Input, getErrorMessage } from '@/shared';
 import EditIcon from '@/shared/assets/icons/edit.svg?react';
 import { useRef } from 'react';
 import { useFormContext } from 'react-hook-form';
+import type { ProfileFormData } from '@/features/changeProfile/model/validation';
 import cls from './profilePersonalInfo.module.scss';
 
 // TODO: заменить селекты на дропдауны и инпут с датой на календарь

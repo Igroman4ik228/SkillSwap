@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { ProfileForm } from './profileForm';
 
 const meta: Meta<typeof ProfileForm> = {
-	title: 'Entities/UserProfileForm',
+	title: 'Features/UserProfileForm',
 	component: ProfileForm,
 	decorators: [
 		(Story) => (

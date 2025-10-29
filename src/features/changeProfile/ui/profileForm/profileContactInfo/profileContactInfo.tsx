@@ -1,9 +1,9 @@
-import type { ProfileFormData } from '@/entities';
 import { Input, getErrorMessage } from '@/shared';
 import EditIcon from '@/shared/assets/icons/edit.svg?react';
 import { useRef } from 'react';
 import { useFormContext } from 'react-hook-form';
 import { NavLink } from 'react-router-dom';
+import type { ProfileFormData } from '@/features/changeProfile/model/validation';
 import cls from './profileContactInfo.module.scss';
 
 export const ProfileContactInfo = () => {

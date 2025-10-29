@@ -1,0 +1,34 @@
+.loginForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+
+.wrapperFields {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.fields {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.error {
+	color: $color-error;
+	font-size: 14px;
+}
+
+.wrapperBtn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.registerLink {
+	color: $color-pressed;
+}

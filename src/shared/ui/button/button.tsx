@@ -9,6 +9,8 @@ export const Button = ({
 	type = 'button',
 	children,
 	className,
+	disabled,
+	onClick,
 	...props
 }: ButtonProps) => (
 	<button
@@ -20,6 +22,8 @@ export const Button = ({
 		)}
 		ref={ref}
 		type={type}
+		disabled={disabled}
+		onClick={disabled ? undefined : onClick}
 		{...props}
 	>
 		{children}
