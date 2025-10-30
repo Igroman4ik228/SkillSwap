@@ -3,4 +3,9 @@
 	gap: 4px;
 	overflow: hidden;
 	white-space: nowrap;
+	transition: opacity 0.5s;
+}
+
+.initialHidden {
+	opacity: 0;
 }
