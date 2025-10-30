@@ -8,7 +8,7 @@ export const AuthorizedRoutes: RouteObject[] = [
 		children: [
 			{
 				path: ROUTES.PROFILE,
-				lazy: () => import('@/pages/profile'),
+				lazy: () => import('@/pages/profilePage'),
 			},
 			{
 				path: ROUTES.PROFILE_SKILLS,

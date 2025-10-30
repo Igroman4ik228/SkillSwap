@@ -1,6 +1,7 @@
 // import { useParams } from 'react-router-dom';
 import { SkillDetailCard } from '@/entities/skill/ui/skillDetailCard';
-import cls from './skill-page.module.scss';
+import { Backing } from '@/shared';
+import cls from './skillPage.module.scss';
 
 export const SkillPage = () => {
 	// const params = useParams();
@@ -13,7 +14,10 @@ export const SkillPage = () => {
 			>
 				здесь будет компонент карточки с пользователем
 			</div>
-			<SkillDetailCard />
+
+			<Backing className={cls.wrapperSkillDetailCard}>
+				<SkillDetailCard />
+			</Backing>
 		</div>
 	);
 };

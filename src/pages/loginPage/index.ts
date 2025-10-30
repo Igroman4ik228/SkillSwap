@@ -1,4 +1,4 @@
-import { LoginPage } from './login';
+import { LoginPage } from './loginPage';
 
 export const Component = LoginPage;
 

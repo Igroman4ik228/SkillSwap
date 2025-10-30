@@ -1,4 +1,4 @@
-import { SkillPage } from './skill-page';
+import { SkillPage } from './skillPage';
 
 export const Component = SkillPage;
 

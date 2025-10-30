@@ -2,7 +2,7 @@ import type { TUsers } from '@/entities';
 import { InfiniteScrolling } from '@/features';
 import { FiltersBar, ShowMoreButton, UserCards, UsersSection } from '@/widgets';
 import { useEffect, useState } from 'react';
-import cls from './skills.module.scss';
+import cls from './skillsPage.module.scss';
 
 export const SkillsPage = () => {
 	const [users, setUsers] = useState<TUsers[]>([]);

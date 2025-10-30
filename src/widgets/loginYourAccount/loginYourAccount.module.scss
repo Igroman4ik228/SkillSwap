@@ -1,9 +1,13 @@
 .loginAccount {
-	width: clamp(320px, 100%, 436px);
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	max-width: 436px;
 	text-align: center;
 }
 
 .icon {
+	align-self: center;
 	margin-bottom: 52px;
 }
 
