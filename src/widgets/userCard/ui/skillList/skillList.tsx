@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import clsx from 'clsx';
 import { SkillTag } from '../skillTag';
 import cls from './skillList.module.scss';
 import type { SkillListProps } from './type';
@@ -58,9 +59,21 @@ export const SkillList = ({ items }: SkillListProps) => {
 	const [visibleItems, setVisibleItems] = useState<string[]>(items);
 	const listRef = useRef<HTMLUListElement | null>(null);
 	const [root, setRoot] = useState<Element | null>(null);
+	const [isVisible, setIsVisible] = useState(false);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		setRoot(listRef.current);
+	}, []);
+
+	// TODO: remove delay?
+	useEffect(() => {
+		const timeoutId = setTimeout(() => {
+			setIsVisible(true);
+		}, 30);
+
+		return () => {
+			clearTimeout(timeoutId);
+		};
 	}, []);
 
 	const handleItemHide = (text: string) => {
@@ -74,7 +87,10 @@ export const SkillList = ({ items }: SkillListProps) => {
 	const hiddenCount = items.length - visibleItems.length;
 
 	return (
-		<ul className={cls.skillList} ref={listRef}>
+		<ul
+			className={clsx(cls.skillList, !isVisible && cls.initialHidden)}
+			ref={listRef}
+		>
 			{visibleItems.map((text) => (
 				<SkillItem key={text} text={text} root={root} onHide={handleItemHide} />
 			))}
