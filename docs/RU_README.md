@@ -5,7 +5,7 @@
 [![VITE](https://img.shields.io/badge/Vite-6-yellow?style=flat&logo=vite&logoColor=white)](https://vite.dev/)
 [![RTK](https://img.shields.io/badge/ReduxToolkit-2-purple?style=flat&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
 
-**[English version](./README.md)**
+**[English](./README.md) | Русский**
 
 ## О проекте
 
