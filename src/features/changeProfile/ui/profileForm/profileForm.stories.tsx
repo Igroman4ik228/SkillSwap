@@ -9,7 +9,7 @@ const meta: Meta<typeof ProfileForm> = {
 		(Story) => (
 			<div
 				style={{
-					maxWidth: 900,
+					width: 900,
 				}}
 			>
 				<Story />

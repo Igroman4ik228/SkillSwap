@@ -33,7 +33,14 @@ export const LoginForm = () => {
 
 	const onSubmit = handleSubmit(async (data: LoginFormData) => {
 		try {
-			await dispatch(loginUser(data));
+			const user = await dispatch(loginUser(data)).unwrap();
+			if (!user) {
+				setError('root', {
+					type: 'manual',
+					message:
+						'Email или пароль введён неверно. Пожалуйста проверьте правильность введённых данных',
+				});
+			}
 		} catch (error) {
 			setError('root', {
 				type: 'manual',
@@ -51,11 +58,13 @@ export const LoginForm = () => {
 				<div className={cls.fields}>
 					<Input
 						type='email'
+						title='Email'
 						placeholder='Введите email'
 						{...register('email')}
 						{...getErrorMessage(errors.email)}
 					/>
 					<PasswordInput
+						title='Пароль'
 						placeholder='Введите ваш пароль'
 						{...register('password')}
 						{...getErrorMessage(errors.password)}

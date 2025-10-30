@@ -1,4 +1,4 @@
-import { SkillsPage } from './skills';
+import { SkillsPage } from './skillsPage';
 
 export const Component = SkillsPage;
 

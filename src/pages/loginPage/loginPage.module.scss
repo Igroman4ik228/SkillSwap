@@ -1,0 +1,27 @@
+.loginPage {
+	display: flex;
+	gap: 24px;
+	width: 100%;
+}
+
+.wrapperLogin {
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px;
+}
+
+.wrapperWelcome {
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px;
+}
+
+@media (width <= 800px) {
+	.wrapperWelcome {
+		display: none;
+	}
+}

@@ -1,0 +1,125 @@
+@use 'variables' as *;
+
+@mixin container($max-width: 1368px, $padding: 15px) {
+	max-width: calc($max-width + $padding * 2);
+	margin: 0 auto;
+	padding: 0 $padding;
+	// TODO: add padding for tablet and phone
+}
+
+@mixin container-full {
+	max-width: 100%;
+	// TODO: add padding for tablet and phone
+}
+
+@mixin interactive-hover {
+	@media (hover: hover) and (pointer: fine) {
+		@content;
+	}
+}
+
+@mixin visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+}
+
+// Typography
+
+@mixin font-face(
+	$font-name,
+	$font-path,
+	$font-weight: 400,
+	$font-style: normal
+) {
+	@font-face {
+		font-weight: $font-weight;
+		font-family: $font-name;
+		font-style: $font-style;
+		font-display: swap;
+		src:
+			url('#{$font-path}.woff2') format('woff2'),
+			url('#{$font-path}.woff') format('woff'),
+			url('#{$font-path}.ttf') format('truetype');
+	}
+}
+
+@mixin text-style(
+	$font-family: $font-main,
+	$font-size: $font-size-body,
+	$line-height: $line-height-body,
+	$color: $color-text,
+	$font-weight: 400
+) {
+	color: $color;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	font-family: $font-family;
+	line-height: $line-height;
+}
+
+@mixin h1($color: $color-text, $font-weight: 600) {
+	@include text-style(
+		$font-family: $font-title,
+		$font-size: $font-size-h1,
+		$line-height: $line-height-h1,
+		$color: $color,
+		$font-weight: $font-weight
+	);
+}
+
+@mixin h2($color: $color-text, $font-weight: 600) {
+	@include text-style(
+		$font-family: $font-title,
+		$font-size: $font-size-h2,
+		$line-height: $line-height-h2,
+		$color: $color,
+		$font-weight: $font-weight
+	);
+}
+
+@mixin h3($color: $color-text, $font-weight: 500) {
+	@include text-style(
+		$font-family: $font-title,
+		$font-size: $font-size-h3,
+		$line-height: $line-height-h3,
+		$color: $color,
+		$font-weight: $font-weight
+	);
+}
+
+@mixin h4($color: $color-text, $font-weight: 500) {
+	@include text-style(
+		$font-family: $font-title,
+		$font-size: $font-size-h4,
+		$line-height: $line-height-h4,
+		$color: $color,
+		$font-weight: $font-weight
+	);
+}
+
+@mixin body-text($color: $color-text, $font-weight: 400) {
+	@include text-style(
+		$font-family: $font-main,
+		$font-size: $font-size-body,
+		$line-height: $line-height-body,
+		$color: $color,
+		$font-weight: $font-weight
+	);
+}
+
+@mixin caption($color: $color-caption, $font-weight: 400) {
+	@include text-style(
+		$font-family: $font-main,
+		$font-size: $font-size-caption,
+		$line-height: $line-height-caption,
+		$color: $color,
+		$font-weight: $font-weight
+	);
+}

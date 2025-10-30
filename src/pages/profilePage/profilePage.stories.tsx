@@ -1,6 +1,6 @@
 import type { TUser } from '@/entities';
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { ProfilePage } from './profile';
+import { ProfilePage } from './profilePage';
 
 const meta: Meta<typeof ProfilePage> = {
 	title: 'Pages/ProfilePage',

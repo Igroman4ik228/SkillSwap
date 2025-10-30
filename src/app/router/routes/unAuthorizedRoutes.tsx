@@ -1,14 +1,15 @@
 import { AuthLayout } from '@/app/layouts/authLayout';
 import { ROUTES } from '@/shared';
+import { LoginHeader } from '@/widgets/login';
 import type { RouteObject } from 'react-router-dom';
 
 export const UnAuthorizedRoutes: RouteObject[] = [
 	{
-		element: <AuthLayout header={<h1>Вход</h1>} />,
+		element: <AuthLayout header={<LoginHeader />} />,
 		children: [
 			{
 				path: ROUTES.LOGIN,
-				lazy: () => import('@/pages/login'),
+				lazy: () => import('@/pages/loginPage'),
 			},
 		],
 	},
@@ -17,7 +18,7 @@ export const UnAuthorizedRoutes: RouteObject[] = [
 		children: [
 			{
 				path: ROUTES.REGISTER,
-				lazy: () => import('@/pages/register'),
+				lazy: () => import('@/pages/registerPage'),
 			},
 		],
 	},

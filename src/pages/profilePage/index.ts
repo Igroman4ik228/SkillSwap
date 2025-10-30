@@ -1,4 +1,4 @@
-import { ProfilePage } from './profile';
+import { ProfilePage } from './profilePage';
 
 export const Component = ProfilePage;
 

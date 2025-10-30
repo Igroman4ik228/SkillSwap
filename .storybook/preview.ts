@@ -10,6 +10,8 @@ import {
 const preview: Preview = {
 	decorators: [StoreDecorator(), MemoryRouteDecorator(), ModalDecorator()],
 	parameters: {
+		layout: 'centered',
+
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,

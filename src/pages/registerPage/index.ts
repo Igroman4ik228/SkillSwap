@@ -1,4 +1,4 @@
-import { RegisterPage } from './register';
+import { RegisterPage } from './registerPage';
 
 export const Component = RegisterPage;
 

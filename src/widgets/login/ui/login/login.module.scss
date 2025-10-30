@@ -1,0 +1,22 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 24px;
+}
+
+.or {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+
+	&::before,
+	&::after {
+		content: '';
+		flex: 1;
+		height: 1px;
+		background-color: $color-disabled;
+	}
+}
