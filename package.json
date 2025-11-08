@@ -19,8 +19,8 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx}": "bash -c 'tsc -p tsconfig.json'",
-		"src/**/*.{css,scss}": "stylelint --aei --fix",
-		"src/**/*.{js,jsx,ts,tsx}": "eslint --fix",
+		"*.{js,jsx,ts,tsx}": "eslint --fix",
+		"*.{css,scss}": "stylelint --aei --fix",
 		"*": "prettier -w -u --log-level error"
 	},
 	"config": {

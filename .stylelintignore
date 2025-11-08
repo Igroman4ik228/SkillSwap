@@ -1,5 +1,4 @@
+build
+dist
 **/normalize.css
 **/normalize.min.css
-**/fonts/
-**/images/
-**/img/
