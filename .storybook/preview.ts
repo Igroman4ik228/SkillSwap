@@ -1,6 +1,6 @@
 import '@/app/styles/index.scss';
 import type { Preview } from '@storybook/react-vite';
-import '../src/shared/lib/validate/yup';
+import '@/shared/lib/validate/yup';
 import {
 	MemoryRouteDecorator,
 	ModalDecorator,

@@ -35,7 +35,7 @@ module.exports = {
 		},
 	},
 	rules: {
-		'@typescript-eslint/no-use-before-define': ['error'],
+		'@typescript-eslint/no-use-before-define': 'error',
 		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 		'@typescript-eslint/consistent-type-imports': [
 			'error',
@@ -67,8 +67,7 @@ module.exports = {
 				ignorePropertyModificationsFor: ['state'],
 			},
 		],
-		'import/no-extraneous-dependencies': 'warn',
-		'react/display-name': 'off',
+		'import/no-extraneous-dependencies': 'error',
 		'no-plusplus': 'off',
 		'react/button-has-type': 'off',
 		'no-console': 'warn',
@@ -78,6 +77,12 @@ module.exports = {
 			files: ['**/*.stories.@(ts|tsx|js|jsx)'],
 			rules: {
 				'no-console': 'off',
+			},
+		},
+		{
+			files: ['vite.config.ts'],
+			rules: {
+				'import/no-extraneous-dependencies': 'off',
 			},
 		},
 	],

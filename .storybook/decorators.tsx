@@ -3,17 +3,17 @@ import type { Parameters } from '@storybook/react-vite';
 import { type ComponentType } from 'react';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
-import { rootReducer, RootState } from '../src/app/store';
-import { DeepPartial, ModalProvider } from '../src/shared';
+import { rootReducer, type RootState } from '@/app/store';
+import { ModalProvider } from '@/shared';
 
-export type TInitialState = {
-	initialState?: DeepPartial<RootState>;
+export type TCustomParameters = {
+	initialState?: RootState;
 };
 
 export const StoreDecorator =
 	() =>
 	(Story: ComponentType, { parameters }: Parameters) => {
-		const { initialState }: TInitialState = parameters;
+		const { initialState }: TCustomParameters = parameters;
 
 		const store = configureStore({
 			reducer: rootReducer,

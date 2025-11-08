@@ -34,5 +34,6 @@
 		/* Compatibility */
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true
-	}
+	},
+	"include": ["src/**/*", ".storybook/**/*", ".eslintrc.cjs", "vite.config.ts"]
 }
