@@ -70,15 +70,9 @@ module.exports = {
 		'import/no-extraneous-dependencies': 'error',
 		'no-plusplus': 'off',
 		'react/button-has-type': 'off',
-		'no-console': 'warn',
+		'no-console': 'off',
 	},
 	overrides: [
-		{
-			files: ['**/*.stories.@(ts|tsx|js|jsx)'],
-			rules: {
-				'no-console': 'off',
-			},
-		},
 		{
 			files: ['vite.config.ts'],
 			rules: {

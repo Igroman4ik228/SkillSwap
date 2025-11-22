@@ -1,9 +1,3 @@
-import {
-	ACCESS_TOKEN_KEY,
-	deleteCookie,
-	REFRESH_TOKEN_KEY,
-	setCookie,
-} from '@/shared';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import {
 	getUserApi,
@@ -13,11 +7,7 @@ import {
 	updateUserApi,
 } from '../api';
 import type { TLoginData, TRegisterData, TUser } from './type';
-
-const saveAuthTokens = (accessToken: string, refreshToken: string) => {
-	setCookie(ACCESS_TOKEN_KEY, accessToken);
-	localStorage.setItem(REFRESH_TOKEN_KEY, refreshToken);
-};
+import { clearAuthTokens, saveAuthTokens } from '../lib';
 
 export const registerUser = createAsyncThunk(
 	'user/registerUser',
@@ -60,8 +50,7 @@ export const updateUserAvatar = createAsyncThunk(
 
 export const logoutUser = createAsyncThunk('user/logoutUser', async () => {
 	await logoutApi();
-	deleteCookie(ACCESS_TOKEN_KEY);
-	localStorage.removeItem(REFRESH_TOKEN_KEY);
+	clearAuthTokens();
 });
 
 export const checkUserAuth = createAsyncThunk(

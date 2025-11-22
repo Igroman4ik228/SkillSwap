@@ -3,7 +3,11 @@ import { Preloader, ROUTES, useTypedSelector } from '@/shared';
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 import type { ProtectedRouteProps } from './type';
 
-export const ProtectedRoute = ({ authRequired }: ProtectedRouteProps) => {
+export const ProtectedRoute = ({
+	authRequired,
+	unauthorizedRedirectTo = ROUTES.LOGIN,
+	authorizedRedirectTo = ROUTES.SKILLS,
+}: ProtectedRouteProps) => {
 	const location = useLocation();
 
 	const isAuthChecked = useTypedSelector(userSelectors.isAuthChecked);
@@ -15,7 +19,13 @@ export const ProtectedRoute = ({ authRequired }: ProtectedRouteProps) => {
 
 	// Если маршрут для авторизованного пользователя, но пользователь неавторизован, то делаем редирект
 	if (authRequired && !isExistUser)
-		return <Navigate replace to={ROUTES.LOGIN} state={{ from: location }} />; // в поле from объекта location.state записываем информацию о URL
+		return (
+			<Navigate
+				replace
+				to={unauthorizedRedirectTo}
+				state={{ from: location }}
+			/>
+		); // в поле from объекта location.state записываем информацию о URL
 
 	// Если маршрут для неавторизованного пользователя, но пользователь авторизован
 	if (!authRequired && isExistUser)
@@ -25,7 +35,7 @@ export const ProtectedRoute = ({ authRequired }: ProtectedRouteProps) => {
 		return (
 			<Navigate
 				replace
-				to={location.state?.from || { pathname: ROUTES.SKILLS }}
+				to={location.state?.from || { pathname: authorizedRedirectTo }}
 			/>
 		);
 
