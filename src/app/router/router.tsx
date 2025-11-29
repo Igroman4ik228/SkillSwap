@@ -24,10 +24,11 @@ export const router = createBrowserRouter([
 			// Публичные пути, для всех
 			...PublicRoutes,
 
-			// Защищённые пути
+			//* Защищённые пути
+
 			// Только для авторизованных
 			{
-				element: <ProtectedRoute authRequired />,
+				element: <ProtectedRoute isPrivate />,
 				children: [...AuthorizedRoutes],
 			},
 

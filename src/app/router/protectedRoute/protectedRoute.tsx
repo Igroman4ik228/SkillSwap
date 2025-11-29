@@ -4,9 +4,9 @@ import { Navigate, Outlet, useLocation } from 'react-router-dom';
 import type { ProtectedRouteProps } from './type';
 
 export const ProtectedRoute = ({
-	authRequired,
-	unauthorizedRedirectTo = ROUTES.LOGIN,
-	authorizedRedirectTo = ROUTES.SKILLS,
+	isPrivate = false,
+	guestRedirectTo = ROUTES.LOGIN,
+	authRedirectTo = ROUTES.SKILLS,
 }: ProtectedRouteProps) => {
 	const location = useLocation();
 
@@ -17,25 +17,19 @@ export const ProtectedRoute = ({
 	// Пока идёт чекаут пользователя, показываем прелоадер
 	if (!isAuthChecked) return <Preloader />;
 
-	// Если маршрут для авторизованного пользователя, но пользователь неавторизован, то делаем редирект
-	if (authRequired && !isExistUser)
-		return (
-			<Navigate
-				replace
-				to={unauthorizedRedirectTo}
-				state={{ from: location }}
-			/>
-		); // в поле from объекта location.state записываем информацию о URL
+	// Если маршрут для авторизованного пользователя(приватный), но пользователь неавторизован, то делаем редирект
+	if (isPrivate && !isExistUser)
+		return <Navigate replace to={guestRedirectTo} state={{ from: location }} />; // в поле from объекта location.state записываем информацию о URL
 
-	// Если маршрут для неавторизованного пользователя, но пользователь авторизован
-	if (!authRequired && isExistUser)
+	// Если маршрут для НЕавторизованного пользователя(НЕ приватный), но пользователь авторизован
+	if (!isPrivate && isExistUser)
 		// при обратном редиректе получаем данные о месте назначения редиректа из объекта location.state
 		// в случае если объекта location.state?.from нет — а такое может быть, если мы зашли на страницу логина по прямому URL
 		// мы сами создаём объект c указанием адреса и делаем переадресацию на главную страницу
 		return (
 			<Navigate
 				replace
-				to={location.state?.from || { pathname: authorizedRedirectTo }}
+				to={location.state?.from || { pathname: authRedirectTo }}
 			/>
 		);
 
