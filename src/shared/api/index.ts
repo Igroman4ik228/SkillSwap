@@ -6,17 +6,9 @@ export type TServerResponse<T> = {
 
 export const baseApi = createApi({
 	reducerPath: 'baseApi',
-	tagTypes: ['User'],
 	baseQuery: fetchBaseQuery({
-		baseUrl: '/api',
-		prepareHeaders: (headers) => {
-			// TODO: Добавить header
-			// const token = getCookie(ACCESS_TOKEN_KEY);
-			// if (token) {
-			//   headers.set('authorization', `auth ${token}`);
-			// }
-			return headers;
-		},
+		baseUrl: 'http://localhost:5173/db/',
 	}),
+	tagTypes: ['Me'],
 	endpoints: () => ({}),
 });
